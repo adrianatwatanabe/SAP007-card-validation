@@ -1,9 +1,7 @@
-<p p align="center">
 ![Logo da marca CardVeric](/src/img/logo-cardveric.png)
-</p>
 
-Status do projeto
-Breve descrição
+**Status do Projeto:** Em andamento
+CardVeric ajuda os comerciantes a verificar se o cartão de crédito e débito são válidos.
 
 sumário
 introdução a aplicação
