@@ -40,37 +40,35 @@ Com a ajuda do CardVeric, os principais usuários dessa aplicação são os come
 ## 5. Experiência do Usuário (UX)
 
 ## 6. Demonstrações do Projeto
-
+ 
+pré-requisitos e como rodar a aplicação e testes
 
 ## 7. Tecnologias Utilizadas
 
-### Utilitários**
+### Aplicação na Web:
+- HTML
+- CSS
+- VanillaJS
+- Web APIs (DOM)
+
+### Ferramentas:
 
 **Planejamento**
-    - Trello: 
+- _**Scrum**_: [Trello](https://trello.com/b/e9L8eGe5) 
 
-**UX**:
-    - Edição de Imagens: Photoshop e Canvas
-    - Protótipo: Figma
+**UX/UI**:
+- _**Edição de Imagens:**_ Adobe Photoshop e Canvas
+- _**Paleta de Cores com Acessibilidade:**_ Adobe Color
+- _**Protótipo:**_ [Figma](https://www.figma.com/proto/FAdITvw78jNMkHuW1GwmJT/Card-Validation?node-id=38%3A142&starting-point-node-id=38%3A142)
 
 **Web**
-   - Editor: Visual Studio Code
-
+- _**Editor:**_ Visual Studio Code
+- _**Editor de Markdown:**_ Dillinger
 
 ## 8. Autora
 
-    
-demonstração da aplicação
-    pré-requisitos e como rodar a aplicação e testes
-Tecnologias utilizadas
-    Website
-      HTML
-      CSS
-      Javascript
-    Utilitários
-      Protótipo Figma
-      Editor Vscode
-      Teste de API
+
+
 
 
 
