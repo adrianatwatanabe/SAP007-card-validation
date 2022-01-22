@@ -70,11 +70,11 @@ pré-requisitos e como rodar a aplicação e testes
 
 ### [Adriana Tiemi Watanabe](https://github.com/adrianatwatanabe)
 
-**Projeto do Bootcamp da [Laboratoria](https://hub.laboratoria.la/br)**
+**Projeto do Bootcamp da _[Laboratoria](https://hub.laboratoria.la/br)_**
 
-**E-mail:** _[adriana.t.watanabe@gmail.com](mailto:adriana.t.watanabe@gmail.com)_
+- **E-mail:** _[adriana.t.watanabe@gmail.com](mailto:adriana.t.watanabe@gmail.com)_
 
-**Linkedin:** _[Adriana Tiemi Watanabe](https://www.linkedin.com/in/adrianatwatanabe/)_
+- **Linkedin:** _[Adriana Tiemi Watanabe](https://www.linkedin.com/in/adrianatwatanabe/)_
 
 
 
