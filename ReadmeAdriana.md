@@ -13,7 +13,7 @@
 - [3. Usuários](#3-usuários)
 - [4. Design de Interface (UI)](#4-design-de-interface-ui)
 - [5. Experiência do Usuário (UX)](#5-experiência-do-usuário-ux)
-- [6. Demonstrações do Projeto](#6-demonstrações-do-projeto)
+- [6. Demonstrações da Aplicação](#6-demonstrações-da-aplicação)
 - [7. Tecnologias Utilizadas](#7-tecnologias-utilizadas)
 - [8. Autora](#8-autora)
 
@@ -21,7 +21,7 @@
 
 ## 1. Introdução
 
-A aplicação CardVeric é um projeto da aluna da [Laboratoria](https://hub.laboratoria.la/br). Essa aplicação verifica se os cartões de crédito e débito são válidos, após inserir no campo de entrada o seu número e constatar se o mesmo possui resultado válido ou não, além de impedir que seja enviado o campo vazio. Ele também deve ocultar visualmente todos os dígitos do número do cartão, exceto os últimos 4 caracteres e identificar o emissor do cartão.
+A aplicação CardVeric é uma aplicação que verifica se os cartões de crédito e débito são válidos, após inserir no campo de entrada o seu número e constatar se o mesmo possui resultado válido ou não, além de impedir que seja enviado o campo vazio. Ele também deve ocultar visualmente todos os dígitos do número do cartão, exceto os últimos 4 caracteres e identificar o emissor do cartão.
 
 ## 2. Funcionalidades
 
@@ -39,7 +39,7 @@ Com a ajuda do CardVeric, os principais usuários dessa aplicação são os come
 
 ## 5. Experiência do Usuário (UX)
 
-## 6. Demonstrações do Projeto
+## 6. Demonstrações da Aplicação
  
 pré-requisitos e como rodar a aplicação e testes
 
@@ -66,6 +66,15 @@ pré-requisitos e como rodar a aplicação e testes
 
 ## 8. Autora
 
+![Adriana T Watanabe](https://avatars.githubusercontent.com/u/97361694?v=4)
+
+[Adriana Tiemi Watanabe](https://github.com/adrianatwatanabe)
+
+Projeto do Bootcamp da [Laboratoria](https://hub.laboratoria.la/br).
+
+E-mail: [adriana.t.watanabe@gmail.com](mailto:adriana.t.watanabe@gmail.com)
+
+Linkedin: [Adriana Tiemi Watanabe](https://github.com/adrianatwatanabe)
 
 
 
