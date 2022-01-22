@@ -52,18 +52,17 @@ pré-requisitos e como rodar a aplicação e testes
 - Web APIs (DOM)
 
 ### Ferramentas:
+- **Planejamento**
+   - **Scrum:** _[Trello](https://trello.com/b/e9L8eGe5)_ 
 
-**Planejamento**
-- _**Scrum**_: [Trello](https://trello.com/b/e9L8eGe5) 
+- **UX/UI**:
+   - **Edição de Imagens:** _Adobe Photoshop e Canvas_
+   - **Paleta de Cores com Acessibilidade:** _Adobe Color_
+   - **Protótipo:**  _[Figma](https://www.figma.com/proto/FAdITvw78jNMkHuW1GwmJT/Card-Validation?node-id=38%3A142&starting-point-node-id=38%3A142)_
 
-**UX/UI**:
-- _**Edição de Imagens:**_ Adobe Photoshop e Canvas
-- _**Paleta de Cores com Acessibilidade:**_ Adobe Color
-- _**Protótipo:**_ [Figma](https://www.figma.com/proto/FAdITvw78jNMkHuW1GwmJT/Card-Validation?node-id=38%3A142&starting-point-node-id=38%3A142)
-
-**Web**
-- _**Editor:**_ Visual Studio Code
-- _**Editor de Markdown:**_ Dillinger
+-**Web**
+   - **Editor:** _Visual Studio Code_
+   - **Editor de Markdown:** _Dillinger_
 
 ## 8. Autora
 
