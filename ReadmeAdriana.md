@@ -21,7 +21,7 @@
 
 ## 1. Introdução
 
-A aplicação CardVeric verifica se cartões de crédito e débito são válidos, após inserir no campo de entrada o seu número e constatar se o mesmo possui resultado válido ou não, além de impedir que seja enviado o campo vazio. Ele também deve ocultar visualmente todos os dígitos do número do cartão, exceto os últimos 4 caracteres e identificar o emissor do cartão.
+A aplicação CardVeric é um projeto da aluna da [Laboratoria](https://hub.laboratoria.la/br). Essa aplicação verifica se os cartões de crédito e débito são válidos, após inserir no campo de entrada o seu número e constatar se o mesmo possui resultado válido ou não, além de impedir que seja enviado o campo vazio. Ele também deve ocultar visualmente todos os dígitos do número do cartão, exceto os últimos 4 caracteres e identificar o emissor do cartão.
 
 ## 2. Funcionalidades
 
@@ -52,7 +52,7 @@ pré-requisitos e como rodar a aplicação e testes
 - Web APIs (DOM)
 
 ### Ferramentas:
-- **Planejamento**
+- **Planejamento:**
    - **Scrum:** _[Trello](https://trello.com/b/e9L8eGe5)_ 
 
 - **UX/UI**:
@@ -60,7 +60,7 @@ pré-requisitos e como rodar a aplicação e testes
    - **Paleta de Cores com Acessibilidade:** _Adobe Color_
    - **Protótipo:**  _[Figma](https://www.figma.com/proto/FAdITvw78jNMkHuW1GwmJT/Card-Validation?node-id=38%3A142&starting-point-node-id=38%3A142)_
 
--**Web**
+- **Web:**
    - **Editor:** _Visual Studio Code_
    - **Editor de Markdown:** _Dillinger_
 
