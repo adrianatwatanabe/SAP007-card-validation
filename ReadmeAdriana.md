@@ -1,6 +1,7 @@
 ![Logo da marca CardVeric](/src/img/logo-pequeno.png)
 
-#### Site que ajuda os comerciantes a verificarem se o cartão de crédito e débito são válidos.
+# Site que ajuda os comerciantes a verificarem se o cartão de crédito e débito são válidos.
+
 **Status do Projeto:** Em andamento.
 
 ---
