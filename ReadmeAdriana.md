@@ -66,8 +66,6 @@ pré-requisitos e como rodar a aplicação e testes
 
 ## 8. Autora
 
-![Adriana T Watanabe](https://avatars.githubusercontent.com/u/97361694?v=4)
-
 ### [Adriana Tiemi Watanabe](https://github.com/adrianatwatanabe)
 
 **Projeto do Bootcamp da _[Laboratoria](https://hub.laboratoria.la/br)_**
