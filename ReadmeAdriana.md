@@ -13,7 +13,7 @@
 - [3. Usuários](#3-usuários)
 - [4. Design de Interface (UI)](#4-design-de-interface-ui)
 - [5. Experiência do Usuário (UX)](#5-experiência-do-usuário-ux)
-- [6. Demonstração do Site](#6-demonstração-do-site)
+- [6. Demonstrações do Projeto](#6-demonstrações-do-projeto)
 - [7. Tecnologias Utilizadas](#7-tecnologias-utilizadas)
 - [8. Autora](#8-autora)
 
@@ -21,7 +21,7 @@
 
 ## 1. Introdução
 
-O site CardVeric verifica se cartões de crédito e débito são válidos, após inserir no campo de entrada o seu número e constatar se o mesmo possui resultado válido ou não, além de impedir que seja enviado o campo vazio. Ele também deve ocultar visualmente todos os dígitos do número do cartão, exceto os últimos 4 caracteres e identificar o emissor do cartão.
+A aplicação CardVeric verifica se cartões de crédito e débito são válidos, após inserir no campo de entrada o seu número e constatar se o mesmo possui resultado válido ou não, além de impedir que seja enviado o campo vazio. Ele também deve ocultar visualmente todos os dígitos do número do cartão, exceto os últimos 4 caracteres e identificar o emissor do cartão.
 
 ## 2. Funcionalidades
 
@@ -33,15 +33,28 @@ Essa validação do cartão de crédito é o primeiro passo para aceitar um paga
 
 Com o aumento crescente das vendas online causado devido a pandemia de Covid-19, as vendas on-line ganharam [13 milhões de novos consumidores no Brasil em 2020](https://g1.globo.com/economia/tecnologia/noticia/2021/03/29/faturamento-de-lojas-on-line-cresce-41percent-em-2020-maior-alta-em-13-anos.ghtml), segundo levantamento da Ebit/Nielsen. Além de 83% dos novos compradores afirmarem que repetiriam a compra pela internet. E com a ajuda das redes sociais, como Instagram, Facebook, WhatshApp e TikTok, isso facilitou  registrando um aumento de [185% entre 2019 e 2020 nos negócios](https://mercadoeconsumo.com.br/2021/02/23/vendas-no-e-commerce-pelas-redes-sociais-saltam-de-22-para-34-em-2020/), representando um terço dessas vendas, de acordo com a Nuvemshop. Então boa parte das empresas precisou se digitalizar, provocando um salto expressivo no mercado digital.
 
-Com a ajuda do CardVeric, os principais usuários desse site são os comerciantes em gerais, mas principalmente os que suspeitam de fraude, podendo identificar as informações de pagamento fraudulento mais rapidamente e evitar as perdas de tempo e dinheiro associados, por meio da identificação dos números de cartões de crédito e débito falsos antes de solicitar uma autorização da empresa do cartão. 
+Com a ajuda do CardVeric, os principais usuários dessa aplicação são os comerciantes em gerais, mas principalmente os que suspeitam de fraude, identificando as informações de pagamento fraudulento mais rapidamente e evitando as perdas de tempo e dinheiro associados, por meio da identificação dos números de cartões de crédito e débito falsos antes de solicitar uma autorização da empresa do cartão. 
 
 ## 4. Design de Interface (UI)
 
 ## 5. Experiência do Usuário (UX)
 
-## 6. Demonstração do Site
+## 6. Demonstrações do Projeto
+
 
 ## 7. Tecnologias Utilizadas
+
+### Utilitários**
+
+**Planejamento**
+    - Trello: 
+
+**UX**:
+    - Edição de Imagens: Photoshop e Canvas
+    - Protótipo: Figma
+
+**Web**
+   - Editor: Visual Studio Code
 
 
 ## 8. Autora
