@@ -8,14 +8,14 @@
 
 ## Índice
 
-- [1. Introdução](#1)
-- [2. Funcionalidades](#2)
-- [3. Usuários](#3)
-- [4. Design de Interface (UI)](#4)
-- [5. Experiência do Usuário (UX)](#5)
-- [6. Demonstração do Site](#6)
-- [7. Tecnologias Utilizadas](#7)
-- [8. Autora](#8)
+- [1. Introdução](#1-introdução)
+- [2. Funcionalidades](#2-funcionalidades)
+- [3. Usuários](#3-usuários)
+- [4. Design de Interface (UI)](#4-design-de-interface-ui)
+- [5. Experiência do Usuário (UX)](#5-experiência-do-usuário-ux)
+- [6. Demonstração do Site](#6-demonstração-do-site)
+- [7. Tecnologias Utilizadas](#7-tecnologias-utilizadas)
+- [8. Autora](#8-autora)
 
 ---
 
