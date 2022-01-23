@@ -6,9 +6,9 @@
 **Status do Projeto:** *Em andamento*
   
 <div style="display: inline_block">
-  <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"> <img alt="Adri-HTML" height="35" width="35" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"></a>
-  <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSSL" target="_blank"><img alt="Adri-CSS" height="35" width="35" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"></a>
-  <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><img alt="Adri-Js" height="35" width="35" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"></a>
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"> <img alt="HTML" height="35" width="35" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"></a>
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSSL" target="_blank"><img alt="CSS" height="35" width="35" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"></a>
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><img alt="JavaScript" height="35" width="35" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"></a>
 </div>
 </div>
 
@@ -19,8 +19,8 @@
 - [1. Introdução](#1-introdução)
 - [2. Funcionalidades](#2-funcionalidades)
 - [3. Usuários](#3-usuários)
-- [4. Design de Interface (UI)](#4-design-de-interface-ui)
-- [5. Experiência do Usuário (UX)](#5-experiência-do-usuário-ux)
+- [4. Planejamento do Projeto](#4-planejamento-do-projeto)
+- [5. Experiência do Usuário (UX) e Design de Interface (UI)](#5-experiência-do-usuário-ux-e-design-de-interface-ui)
 - [6. Instruções de Uso](#6-instruções-de-uso)
   - [6.1. Instalações](#61-instalações)
   - [6.2. Como usar o CardVeric?](#62-como-usar-o-cardveric)
@@ -43,33 +43,69 @@ Essa validação do cartão de crédito é o primeiro passo para aceitar um paga
 
 Com o aumento crescente das vendas online causado devido a pandemia de Covid-19, as vendas on-line ganharam [13 milhões de novos consumidores no Brasil em 2020](https://g1.globo.com/economia/tecnologia/noticia/2021/03/29/faturamento-de-lojas-on-line-cresce-41percent-em-2020-maior-alta-em-13-anos.ghtml), segundo levantamento da Ebit/Nielsen. Além de 83% dos novos compradores afirmarem que repetiriam a compra pela internet. E com a ajuda das redes sociais, como Instagram, Facebook, WhatshApp e TikTok, isso facilitou  registrando um aumento de [185% entre 2019 e 2020 nos negócios](https://mercadoeconsumo.com.br/2021/02/23/vendas-no-e-commerce-pelas-redes-sociais-saltam-de-22-para-34-em-2020/), representando um terço dessas vendas, de acordo com a Nuvemshop. Então boa parte das empresas precisou se digitalizar, provocando um salto expressivo no mercado digital.
 
-Com a ajuda do CardVeric, os principais usuários dessa aplicação são os comerciantes em gerais, mas principalmente os que suspeitam de fraude, identificando as informações de pagamento fraudulento mais rapidamente e evitando as perdas de tempo e dinheiro associados, por meio da identificação dos números de cartões de crédito e débito falsos antes de solicitar uma autorização da empresa do cartão. 
+Com a ajuda do CardVeric, os principais usuários dessa aplicação são os comerciantes em geral, mas principalmente os que suspeitam de fraude, identificando as informações de pagamento fraudulento mais rapidamente e evitando as perdas de tempo e dinheiro associados, por meio da identificação dos números de cartões de crédito e débito falsos antes de solicitar uma autorização da empresa do cartão. 
 
-## 4. Design de Interface (UI)
+## 4. Planejamento do Projeto
+  
+  - `CardVeric` é um projeto desenvolvido em 2022, para o bootcamp da [Laboratoria Brasil](https://hub.laboratoria.la/br).
+  - Esse projeto é baseado nas instruções apresentadas pelo `README` do [CardValidation](https://github.com/Laboratoria/SAP007-card-validation.git).
 
-Cores
-formas
-Tipografia
-Ícones
+  ### Scrum
 
+  1. Para realizar o planejamento foi utilizado o `Scrum`, que é uma [metodologia ágil](https://agilemanifesto.org/principles.html) para gestão e planejamento de projetos de software, onde os projetos são divididos em ciclos, chamados de Sprints.
+  2. O `Sprint` representa um conjunto de atividades devem ser executadas. As funcionalidades a serem implementadas em um projeto são mantidas em uma lista que é conhecida como `Product Backlog`. 
+  3. A cada dia de uma Sprint, a há uma breve reunião chamada `Daily Scrum Meeting`. O objetivo é disseminar conhecimento sobre o que foi feito no dia anterior, identificar impedimentos e priorizar o trabalho do dia que se inicia, priorizando os itens do Product Backlog.
+  4. Ao final de um Sprint, é apresentado as funcionalidades implementadas em uma `Sprint Review`. Finalmente, faz-se uma `Sprint Retrospective` e parte para o planejamento do próximo Sprint. Assim reinicia-se o ciclo.
+  
+  - Os Sprints da Laboratoria possuem duração de uma semana e são iniciadas todas as sextas-feiras. A Daily é realizada por meio de uma planilha e o Sprint Review é feito todas as quintas-feiras. 
 
+  ### Kanban
 
-## 5. Experiência do Usuário (UX)
+  - Para facilitar a organização sobre: _**O QUE FAZER, O QUE ESTOU FAZENDO e O QUE FOI FEITO**_, foi utilizado a metodologia `KANBAN`.
+  - O objetivo é supervisionar, gerenciar e controlar o fluxo de tarefas que são feitas em cada etapa da produção. 
+  - Ele é dividido em 3 principais colunas: _**To Do, Doing e Done**_, e, os cartões são movidos de coluna para coluna conforme o seu status é mudado. 
+  - A ferramenta utilizada para a organização foi o [Trello](https://trello.com/pt-BR) e ela foi dividida em cinco colunas: _**Files, To Do Backlog, To Do, Ongoing e Done.**_
+     - `Files`: são os arquivos que devem ser entregados ao final do projeto. Servindo mais como um lembrete com checklist especificados no `README` do [CardValidation](https://github.com/Laboratoria/SAP007-card-validation.git). Eles possuem a etiqueta azul com nome de Files.
+     - `To Do Backlog`: são os microprojetos a serem feitos por etapas e sequências, ordenado em ordem crescente. Ao final do Scrum, o projeto estará funcionando, mesmo não estando completo com todos os requisitos apresentados no README do CardValidation. Eles possuem a etiqueta rosa com o nome Backlog, mas também poderão ter outras etiquetas com nível de prioridade para fazer o Ongoing. 
+     - `To Do`: como o projeto é de um bootcamp, nesta coluna estão todos os tópicos a serem estudados, de acordo com o que é necessário para o Backlog. Eles são separados por nível de prioridade de 1 a 6, onde cada cor recebe uma cor.
+     - `Ongoing`: os cartões do To Do Backlog e To Do são movidos para ele, obedecendo o nível de prioridade conforme o que é necessário estudar para realizar os baby steps (microprojetos). 
+     - `Done`: nada mais é que os cartões concluídos no Ongoing.
 
-Planejamento do Projeto e Processo, baby steps: https://trello.com/b/e9L8eGe5/lab-primeiro-proj
+     - ### [KANBAN DO CARDVERIC](https://trello.com/b/e9L8eGe5/lab-primeiro-proj)
 
-mostrar as repostas na própria página, não precisando fechar pop-pup
+## 5. Experiência do Usuário (UX) e Design de Interface (UI)
+
+mostrar as reSpostas na própria página, não precisando fechar pop-pup
 cores que possuem contraste - adobe color
 Telas
 Explicações e mensagens
 Wireframe (p&b)
 Protótipo e Feedback --> Validação do protótipo
-   - Para realizar o projeto CardValidation do bootcamp [Laboratoria](https://hub.laboratoria.la/br), foi realizado primeiro um protótipo simples usando papel e lápis, em preto e branco.
-   - valide esta solução com uma companheira (peça feedback).
-   - Use o aprendizado no momento de validar seu primeiro protótipo e desenvolva um novo protótipo empregando alguma ferramenta para design de protótipos 
 
 
+  
+Cores
+formas
+Tipografia
+Ícones 
+  ### Criação do Protótipo
+  
+   - Para realizar o projeto  do bootcamp Laboratoria, foi realizado primeiro um protótipo simples (baixa fidelidade) usando papel e lápis.
+   - Em seguida foi mostrado a solução para uma das alunas desse bootcamp, para que ela o avaliasse, dando feedbacks sobre ele que foram anotados no próprio papel do feedback.
+   - Depois de todas as ideias e dicas estabelecidas, para validar esse protótipo, foi desenvolvido um novo protótipo (alta fidelidade) usando uma ferramenta digital para protótipo. A ferramenta utilizada foi o Figma, que é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web.
 
+   ### Protótipo de Baixa Fidelidade com Feedback
+   
+   <div>
+      <img alt="" height="300" src="/src/img/prototipo-card-validation.jpeg">
+   </div>
+   
+   ### Protótipo de Alta Fidelidade
+   
+   <div>
+      <img alt="" height="300" src="/src/img/prototipo.gif">
+   </div>
+   
 ## 6. Instruções de Uso:
 
    ### 6.1 Instalações:
