@@ -54,24 +54,24 @@ Com a ajuda do CardVeric, os principais usuários dessa aplicação são os come
 
   ### 4.1 Scrum
 
-  1. Para realizar o planejamento foi utilizado o _Scrum_, que é uma [metodologia ágil](https://agilemanifesto.org/principles.html) para gestão e planejamento de projetos de software, onde os projetos são divididos em ciclos, chamados de Sprints.
-  2. O _Sprint_ representa um conjunto de atividades que devem ser executadas. As funcionalidades a serem implementadas em um projeto são mantidas em uma lista que é conhecida como _Product Backlog_. 
-  3. A cada dia de uma Sprint, há uma breve reunião chamada _Daily Scrum Meeting_. O objetivo é disseminar conhecimento sobre o que foi feito no dia anterior, identificar impedimentos e priorizar o trabalho do dia que se inicia, priorizando os itens do Product Backlog.
-  4. Ao final de um Sprint, é apresentado as funcionalidades implementadas em uma _Sprint Review_. Finalmente, faz-se uma _Sprint Retrospective_ e parte para o planejamento do próximo Sprint. Assim reinicia-se o ciclo.
+  1. Para realizar o planejamento foi utilizado o _**Scrum**_, que é uma [metodologia ágil](https://agilemanifesto.org/principles.html) para gestão e planejamento de projetos de software, onde os projetos são divididos em ciclos, chamados de Sprints.
+  2. O _**Sprint**_ representa um conjunto de atividades que devem ser executadas. As funcionalidades a serem implementadas em um projeto são mantidas em uma lista que é conhecida como _**Product Backlog**_. 
+  3. A cada dia de uma Sprint, há uma breve reunião chamada _**Daily Scrum Meeting**_. O objetivo é disseminar conhecimento sobre o que foi feito no dia anterior, identificar impedimentos e priorizar o trabalho do dia que se inicia, priorizando os itens do _**Product Backlog**_.
+  4. Ao final de um Sprint, é apresentado as funcionalidades implementadas em uma _**Sprint Review**_. Finalmente, faz-se uma _**Sprint Retrospective**_ e parte para o planejamento do próximo Sprint. Assim reinicia-se o ciclo.
   
   - Os Sprints da Laboratoria possuem duração de uma semana e são iniciadas todas as sextas-feiras. A Daily é realizada por meio de uma planilha e o Sprint Review é feito todas as quintas-feiras. 
 
   ### 4.2 Kanban
 
-  - Para facilitar a organização sobre: _**O QUE FAZER, O QUE ESTOU FAZENDO e O QUE FOI FEITO**_, foi utilizado a metodologia _Kanban_.
+  - Para facilitar a organização sobre: _**O QUE FAZER, O QUE ESTOU FAZENDO e O QUE FOI FEITO**_, foi utilizado a metodologia _**Kanban**_.
   - O objetivo é supervisionar, gerenciar e controlar o fluxo de tarefas que são feitas em cada etapa da produção. 
   - Ele é dividido em 3 principais colunas: _**To Do, Doing e Done**_, e, os cartões são movidos de coluna para coluna conforme o seu status é mudado. 
   - A ferramenta utilizada para a organização foi o [Trello](https://trello.com/pt-BR) e ela foi dividida em cinco colunas: _**Files, To Do Backlog, To Do, Ongoing e Done.**_
-     - _Files_: são os arquivos que devem ser entregados ao final do projeto. Servindo mais como um lembrete com checklist especificados no _README_ do [CardValidation](https://github.com/Laboratoria/SAP007-card-validation.git). Eles possuem a etiqueta azul com nome de Files.
-     - _To Do Backlog_: são os microprojetos a serem feitos por etapas e sequências, ordenado em ordem crescente. Ao final do Scrum, o projeto estará funcionando, mesmo não estando completo com todos os requisitos apresentados no README do CardValidation. Eles possuem a etiqueta rosa com o nome Backlog, mas também poderão ter outras etiquetas com nível de prioridade para fazer o Ongoing. 
-     - _To Do_: como o projeto é de um bootcamp, nesta coluna estão todos os tópicos a serem estudados, de acordo com o que é necessário para o Backlog. Eles são separados por nível de prioridade de 1 a 6, onde cada cor recebe uma cor.
-     - _Ongoing_: os cartões do To Do Backlog e To Do são movidos para ele, obedecendo o nível de prioridade conforme o que é necessário estudar para realizar os baby steps (microprojetos). 
-     - _Done_: nada mais é que os cartões concluídos no Ongoing.
+     - _**Files**_: são os arquivos que devem ser entregados ao final do projeto. Servindo mais como um lembrete com checklist especificados no _README_ do [CardValidation](https://github.com/Laboratoria/SAP007-card-validation.git). Eles possuem a etiqueta azul com nome de Files.
+     - _**To Do Backlog**_: são os microprojetos a serem feitos por etapas e sequências, ordenado em ordem crescente. Ao final do Scrum, o projeto estará funcionando, mesmo não estando completo com todos os requisitos apresentados no README do CardValidation. Eles possuem a etiqueta rosa com o nome Backlog, mas também poderão ter outras etiquetas com nível de prioridade para fazer o Ongoing. 
+     - _**To Do**_: como o projeto é de um bootcamp, nesta coluna estão todos os tópicos a serem estudados, de acordo com o que é necessário para o Backlog. Eles são separados por nível de prioridade de 1 a 6, onde cada cor recebe uma cor.
+     - _**Ongoing**_: os cartões do To Do Backlog e To Do são movidos para ele, obedecendo o nível de prioridade conforme o que é necessário estudar para realizar os baby steps (microprojetos). 
+     - _**Done**_: nada mais é que os cartões concluídos no Ongoing.
 
      - ### [KANBAN DO CARDVERIC](https://trello.com/b/e9L8eGe5/lab-primeiro-proj)
 
@@ -87,15 +87,15 @@ Com a ajuda do CardVeric, os principais usuários dessa aplicação são os come
 
    - _**Telas**_
 
-      - Pensando na facilidade de uso e no pouco tempo que os comerciantes tem para verificar os cartões, a aplicação funcionará em apenas a _Tela Inicial_, onde possuirá um campo de entrada para insereir os números dos cartões. Após serem inseridos, basta apenas clicar no botão _Verificar_ e esperar uns milésimos de segundos para que a resposta apareça logo abaixo desse botão. Não é necessário voltar na página anterior ou carregá-la novamente para inserir outro número. Também não possuirá [pop-ups](https://tecnoblog.net/responde/o-que-e-pop-up/) para os acessos recorrentes da aplicação, somente para as informações de Contatos e Sobre. 
+      - Pensando na facilidade de uso e no pouco tempo que os comerciantes tem para verificar os cartões, a aplicação funcionará em apenas a _**Tela Inicial**_, onde possuirá um campo de entrada para insereir os números dos cartões. Após serem inseridos, basta apenas clicar no botão _**Verificar**_ e esperar uns milésimos de segundos para que a resposta apareça logo abaixo desse botão. Não é necessário voltar na página anterior ou carregá-la novamente para inserir outro número. Também não possuirá [pop-ups](https://tecnoblog.net/responde/o-que-e-pop-up/) para os acessos recorrentes da aplicação, somente para as informações de _**Contatos**_ e _**Sobre**_. 
 
    - _**Explicações e Mensagens**_
 
-      - Para ajudar no uso da aplicação, existirá uma mensagem logo que a página é carregada, em cima do campo de entrada com a seguinte mensagem: _Insirá o número do cartão_. Após o comerciante inserir o número e verificar se o mesmo é válido ou não, uma nova mensagem surgirá acima do campo de entrada: _Insirá outro número de cartão_. Depois de inserir e verificar, novamente a resposta aparecerá em baixo do botão. Com as respostas aparecendo na própria página, não precisará carregar uma nova página e muito menos fechar telas de pou-ups.
+      - Para ajudar no uso da aplicação, existirá uma mensagem logo que a página é carregada, em cima do campo de entrada com a seguinte mensagem: _**Insirá o número do cartão**_. Após o comerciante inserir o número e verificar se o mesmo é válido ou não, uma nova mensagem surgirá acima do campo de entrada: _**Insirá outro número de cartão**_. Depois de inserir e verificar, novamente a resposta aparecerá em baixo do botão. Com as respostas aparecendo na própria página, não precisará carregar uma nova página e muito menos fechar telas de pou-ups.
 
    - _**Arquitetura de Informação**_
 
-      - O mapa dessa aplicação acontecerá em apenas uma página ou nível, por se tratar de uma aplicação simples, onde todas as principais mudanças de informações não acontecerão em outras páginas e sim na mesma página, como as respostas das validações acontecem abaixo do botão Validar. Além de informações de outras páginas ocorrerem na própria tela inicial, como a página _Sobre_ e _Contatos_ que usaram pop-ups e após fechá-las no X, a tela inicial ficará visível, sem a necessidade de carregá-la novamente.
+      - O mapa dessa aplicação acontecerá em apenas uma página ou nível, por se tratar de uma aplicação simples, onde todas as principais mudanças de informações não acontecerão em outras páginas e sim na mesma página, como as respostas das validações acontecem abaixo do botão Validar. Além de informações de outras páginas ocorrerem na própria tela inicial, como a página _**Sobre**_ e _**Contatos**_ que usaram pop-ups e após fechá-las no X, a tela inicial ficará visível, sem a necessidade de carregá-la novamente.
 
 ### 5.3 Protótipo de Baixa Fidelidade
 
