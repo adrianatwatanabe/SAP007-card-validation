@@ -87,7 +87,7 @@ Com a ajuda do CardVeric, os principais usuários dessa aplicação são os come
 
    - _**Telas**_
 
-      - Pensando na facilidade de uso e no pouco tempo que os comerciantes tem para verificar os cartões, a aplicação funcionará em apenas a _**Tela Inicial**_, onde possuirá um campo de entrada para insereir os números dos cartões. Após serem inseridos, basta apenas clicar no botão _**Verificar**_ e esperar uns milésimos de segundos para que a resposta apareça logo abaixo desse botão. Não é necessário voltar na página anterior ou carregá-la novamente para inserir outro número. Também não possuirá [pop-ups](https://tecnoblog.net/responde/o-que-e-pop-up/) para os acessos recorrentes da aplicação, somente para as informações de _**Contatos**_ e _**Sobre**_. 
+      - Pensando na facilidade de uso e no pouco tempo que os comerciantes tem para verificar os cartões, a aplicação funcionará em apenas a _**Tela Inicial**_, onde possuirá um campo de entrada para insereir os números dos cartões. Após serem inseridos, basta apenas clicar no botão _**Verificar**_ e esperar uns milésimos de segundos para que a resposta apareça logo abaixo desse botão. Não é necessário voltar na página anterior ou carregá-la novamente para inserir outro número. Também não possuirá [pop-ups](https://tecnoblog.net/responde/o-que-e-pop-up/) para os acessos recorrentes da aplicação, somente para as informações de _**Contatos**_ e _**Sobre**_. Caso queira limpar a tela, não mostrando nenhum número de cartão, é só clicar na [logo](/src/img/logo-pequeno.png) ou atualizar a página. 
 
    - _**Explicações e Mensagens**_
 
