@@ -16,9 +16,9 @@
 - [3. Usuários](#3-usuários)
 - [4. Design de Interface (UI)](#4-design-de-interface-ui)
 - [5. Experiência do Usuário (UX)](#5-experiência-do-usuário-ux)
-- [6. Demonstrações da Aplicação](#6-demonstrações-da-aplicação)
-  - [6.1. Instalações](#6.1-instalações)
-  - [6.2. Como usar o CardVeric?](#6.2-como-usar-o-cardveric?)
+- [6. Instruções de Uso](#6-instruções-de-uso)
+  - [6.1. Instalações](#61-instalações)
+  - [6.2. Como usar o CardVeric?](#62-como-usar-o-cardveric?)
 - [7. Tecnologias Utilizadas](#7-tecnologias-utilizadas)
 - [8. Autora](#8-autora)
 
@@ -59,11 +59,13 @@ Telas
 Explicações e mensagens
 Wireframe (p&b)
 Protótipo e Feedback --> Validação do protótipo
+   - Para realizar o projeto CardValidation do bootcamp [Laboratoria](https://hub.laboratoria.la/br), foi realizado primeiro um protótipo simples usando papel e lápis, em preto e branco.
+   - valide esta solução com uma companheira (peça feedback).
+   - Use o aprendizado no momento de validar seu primeiro protótipo e desenvolva um novo protótipo empregando alguma ferramenta para design de protótipos 
 
 
 
-
-## 6. Demonstrações da Aplicação
+## 6. Instruções de Uso:
 
    ### 6.1 Instalações:
 
@@ -109,6 +111,11 @@ Protótipo e Feedback --> Validação do protótipo
    
      - Para mais informações sobre o produto, clique em _**Sobre**_.
      - Em caso de problemas com a aplicação ou deseje tirar dúvidas sobre ela, clique em _**Contatos**_.  
+
+   ### 6.3 Protótipo
+   <video controls autoplay loop muted poster><source src="https://youtu.be/cxgnVfzRG4A" type="video/mp4"></video>
+
+   
 
 ## 7. Tecnologias Utilizadas
 
