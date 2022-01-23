@@ -101,13 +101,7 @@ Tipografia
    <div>
       <img alt="" height="300" src="/src/img/prototipo-card-validation.jpeg">
    </div>
-   
-   ### Protótipo de Alta Fidelidade
-   
-   <div>
-      <img alt="" height="300" src="/src/img/prototipo.gif">
-   </div>
-   
+
 ## 6. Instruções de Uso:
 
    ### 6.1 Instalações:
@@ -151,9 +145,12 @@ Tipografia
    4. Para inserir outro número de cartão de débito ou crédito, clique no campo de entrada e digite os números.
    5. Logo em seguida, clique em Validar e a resposta aparecerá abaixo do botão.
    6. Para voltar a página sem os números do cartão, clique no logo do [CardVeric](/src/img/logo-pequeno.png).
-   
-     - Para mais informações sobre o produto, clique em _**Sobre**_.
-     - Em caso de problemas com a aplicação ou deseje tirar dúvidas sobre ela, clique em _**Contatos**_.  
+   7. Para mais informações sobre o produto, clique em `Sobre`.
+   8. Em caso de problemas com a aplicação ou deseje tirar dúvidas sobre ela, clique em `Contatos`.
+
+      <div>
+          <img alt="" height="300" src="/src/img/prototipo.gif">
+      </div> 
 
 ## 7. Ferramentas Utilizadas:
 
