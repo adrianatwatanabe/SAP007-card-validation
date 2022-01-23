@@ -85,19 +85,16 @@ Com a ajuda do CardVeric, os principais usuários dessa aplicação são os come
 
    - Para realizar o projeto  do bootcamp Laboratoria, foi realizado primeiro um protótipo simples (baixa fidelidade) usando papel e lápis. A sua criação foi dividido em: _**telas, explicações e mensagens, arquitetura de informação.**_
 
-   - _**Telas**_
+   - _**Telas, Mensagens e Botões**_
 
-      - Pensando na facilidade de uso e no pouco tempo que os comerciantes tem para verificar os cartões, a aplicação funcionará em apenas a _**Tela Inicial**_, onde possuirá um campo de entrada para insereir os números dos cartões. Após serem inseridos, basta apenas clicar no botão _**Verificar**_ e esperar uns milésimos de segundos para que a resposta apareça logo abaixo desse botão. Não é necessário voltar na página anterior ou carregá-la novamente para inserir outro número. Também não possuirá [pop-ups](https://tecnoblog.net/responde/o-que-e-pop-up/) para os acessos recorrentes da aplicação, somente para as informações de _**Contatos**_ e _**Sobre**_. Caso queira limpar a tela, não mostrando nenhum número de cartão, é só clicar na [logo](/src/img/logo-pequeno.png) ou atualizar a página. 
-
-   - _**Explicações e Mensagens**_
-
-      - Para ajudar no uso da aplicação, existirá uma mensagem logo que a página é carregada, em cima do campo de entrada com a seguinte mensagem: _**Insirá o número do cartão**_. Após o comerciante inserir o número e verificar se o mesmo é válido ou não, uma nova mensagem surgirá acima do campo de entrada: _**Insirá outro número de cartão**_. Depois de inserir e verificar, novamente a resposta aparecerá em baixo do botão. Com as respostas aparecendo na própria página, não precisará carregar uma nova página e muito menos fechar telas de pou-ups.
+      - Pensando na facilidade de uso e no pouco tempo que os comerciantes tem para verificar os cartões, a aplicação funcionará apenas na _**Tela Inicial**_, onde possuirá um campo de entrada para insereir os números dos cartões. Após serem inseridos, basta apenas clicar no botão _**Verificar**_ e esperar uns milésimos de segundos para que a resposta apareça logo abaixo desse botão e a mensagem acima do campo de entrada mudará para _**Número do cartão**_. Também o botão _**Validar**_ mudará para _**Insirá outro número**_, não sendo necessário atualizar a página para limpar o campo de entrada.
+      - Caso queira limpar a tela, não mostrando nenhum número de cartão, é só clicar na [logo](/src/img/logo-pequeno.png) ou atualizar a página. 
 
    - _**Arquitetura de Informação**_
 
-      - O mapa dessa aplicação acontecerá em apenas uma página ou nível, por se tratar de uma aplicação simples, onde todas as principais mudanças de informações não acontecerão em outras páginas e sim na mesma página, como as respostas das validações acontecem abaixo do botão Validar. Além de informações de outras páginas ocorrerem na própria tela inicial, como a página _**Sobre**_ e _**Contatos**_ que usaram pop-ups e após fechá-las no X, a tela inicial ficará visível, sem a necessidade de carregá-la novamente.
+      - O mapa dessa aplicação acontecerá em apenas uma página ou nível, por se tratar de uma aplicação simples, onde todas as principais mudanças de informações não acontecerão em outras páginas e sim na mesma página, como as respostas das validações acontecem abaixo do botão Validar e ao limpar o campo de entrada. Além de informações de outras páginas ocorrerem na própria tela inicial, como a página _**Sobre**_ e _**Contatos**_ que usaram [pop-ups](https://tecnoblog.net/responde/o-que-e-pop-up/) e após fechá-las no X, a tela inicial ficará visível, sem a necessidade de carregá-la novamente.
 
-### 5.3 Protótipo de Baixa Fidelidade
+### 5.3 Feedbacks
 
    - Após o término do Wireframe, foi mostrado a solução para uma das alunas desse bootcamp, para que ela o avaliasse, dando feedbacks sobre ele que foram anotados no próprio papel do protótipo de baixa fidelidade.
 
@@ -110,7 +107,9 @@ Com a ajuda do CardVeric, os principais usuários dessa aplicação são os come
    - Depois de todas as ideias e dicas estabelecidas, para validar esse protótipo, foi desenvolvido um novo protótipo (alta fidelidade) usando uma ferramenta digital para protótipo. A ferramenta utilizada foi o Figma, que é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web.
    - [Protótipo no Figma](https://www.figma.com/proto/FAdITvw78jNMkHuW1GwmJT/Card-Validation?node-id=78%3A223&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=78%3A223)
 
-   - _**Marca:**_
+   - _**Marca:**
+     
+      - 
 
 
 
