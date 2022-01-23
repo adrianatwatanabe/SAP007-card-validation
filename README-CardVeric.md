@@ -1,8 +1,11 @@
-![Logo da marca CardVeric](/src/img/logo-pequeno.png)
+<div align="center">
+   <img alt="logo-CardVeric" src="/src/img/logo-pequeno.png">
 
 ## CardVeric verifica se o cartão de crédito e débito são válidos.
 
 **Status do Projeto:** *Em andamento*
+  
+</div>
 
 ---
 
@@ -14,6 +17,8 @@
 - [4. Design de Interface (UI)](#4-design-de-interface-ui)
 - [5. Experiência do Usuário (UX)](#5-experiência-do-usuário-ux)
 - [6. Demonstrações da Aplicação](#6-demonstrações-da-aplicação)
+  - [6.1. Instalações](#6.1-instalações)
+  - [6.2. Como usar o CardVeric?](#6.2-como-usar-o-cardveric?)
 - [7. Tecnologias Utilizadas](#7-tecnologias-utilizadas)
 - [8. Autora](#8-autora)
 
@@ -37,11 +42,73 @@ Com a ajuda do CardVeric, os principais usuários dessa aplicação são os come
 
 ## 4. Design de Interface (UI)
 
+Cores
+formas
+Tipografia
+Ícones
+
+
+
 ## 5. Experiência do Usuário (UX)
 
+Planejamento do Projeto e Processo, baby steps: https://trello.com/b/e9L8eGe5/lab-primeiro-proj
+
+mostrar as repostas na própria página, não precisando fechar pop-pup
+cores que possuem contraste - adobe color
+Telas
+Explicações e mensagens
+Wireframe (p&b)
+Protótipo e Feedback --> Validação do protótipo
+
+
+
+
 ## 6. Demonstrações da Aplicação
+
+   ### 6.1 Instalações:
+
+   1. Após fazer o seu próprio _[FORK](https://docs.github.com/en/get-started/quickstart/fork-a-repo)_ do repositório CardVeric, _[CLONE](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)_ o fork para o seu computador (cópia local).
+   2. Instale o software [Node.js](https://nodejs.org/en/).
+   3. Após a instalação, abra o [terminal](https://www.programaria.org/o-que-e-o-terminal-ou-venha-conhecer-tela-preta/) de seu computador e digite os seguintes comandos para verificar as versões do Node.js e [npm](https://docs.npmjs.com/) instaladas. Digite uma linha por vez:
+
+      ```
+      $ node -v
+      $ npm -v 
+      ```
  
-pré-requisitos e como rodar a aplicação e testes
+   3. Localize o diretório do projeto CardVeric em seu computador por meio do temrinal, utilizando o comando cd (Change Directory).
+   4. Instale as dependências do projeto executando o seguinte comando:
+
+      ```
+      $ npm install
+      ```
+   5. Se tudo foi bem, você deve conseguir executar os comandos dos testes unitários pelo terminal com o comando:
+    
+      ```
+      $ npm test
+      ```
+      
+   7. Após os testes ocorrerem tudo bem, inicie o npm no terminal para ver a interface do seu programa no navegador:
+   
+      ```
+      $ npm start
+      ```
+   6. O comando `npm star` exibirá uma _**url**_ com a palavra _**localhost**_. Copie essa url, cole-a na [barra de endereço](https://pt.wikipedia.org/wiki/Barra_de_endere%C3%A7o) de seu navegador e aperte a tecla [Enter](https://pt.wikipedia.org/wiki/Enter_(tecla)).
+   7. Pronto! Agora o site CardVeric aparecerá em seu navegador.
+
+   ---
+   
+   ### 6.2 Como usar o CardVeric?
+
+   1. Ao carregar a página da aplicação `CardVeric` , insira os `números de 0 a 9` , do cartão de `débito ou crédito` no campo de entrada.
+   2. Após digitar o número, clique no botão `Validar` e espere um alguns milésimos de segundos.
+   3. Pronto! A resposta se o cartão é válido ou não, surgirá abaixo do botão Validar.
+   4. Para inserir outro número de cartão de débito ou crédito, clique no campo de entrada e digite os números.
+   5. Logo em seguida, clique em Validar e a resposta aparecerá abaixo do botão.
+   6. Para voltar a página sem os números do cartão, clique no logo do [CardVeric](/src/img/logo-pequeno.png).
+   
+     - Para mais informações sobre o produto, clique em _**Sobre**_.
+     - Em caso de problemas com a aplicação ou deseje tirar dúvidas sobre ela, clique em _**Contatos**_.  
 
 ## 7. Tecnologias Utilizadas
 
