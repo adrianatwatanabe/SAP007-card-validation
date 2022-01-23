@@ -108,22 +108,24 @@ Com a ajuda do CardVeric, os principais usuários dessa aplicação são os come
 ### 5.4 Protótipo Validado
 
    - Depois de todas as ideias e dicas estabelecidas, para validar esse protótipo, foi desenvolvido um novo protótipo (alta fidelidade) usando uma ferramenta digital para protótipo. A ferramenta utilizada foi o Figma, que é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web.
+   - [Protótipo no Figma](https://www.figma.com/proto/FAdITvw78jNMkHuW1GwmJT/Card-Validation?node-id=78%3A223&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=78%3A223)
 
-cores que possuem contraste - adobe color
+   - _**Marca:**_
 
-  
 
-ESTILO DO DESIGN
-  MARCA
-  FORMAS GEOMÉTRICAS (ESTRUTURA)
-  BOTÕES
-ESPAÇAMENTO
-TIPOGRAFIA
-CORES
-ÍCONES
-LISTAGENS
-FORMULÁRIOS
-GESTOS E MICROINTERAÇÕES
+
+   - _**Estilo:**_    
+      design flat, exceto as logos dos emissores de cartão de crédito e débito.
+
+   - _**Cores:**_
+   
+     - Psicologia das cores
+     - Cores que possuem contraste adobe color
+   - _**Tipografia:**_
+   - _**Hierarquia:**_
+      - Espaçamento
+    
+- _**Microinterações:**_
 
 
 ## 6. Instruções de Uso:
@@ -185,6 +187,7 @@ GESTOS E MICROINTERAÇÕES
    - **Edição de Imagens:** _[Canvas](https://www.canva.com/pt_br/)_
    - **Paleta de Cores com Acessibilidade:** _[Adobe Color](https://color.adobe.com/pt/create/color-wheel)_
    - **Protótipo:**  _[Figma](https://www.figma.com/)_
+   - **Transforma Vídeo em Gif:** _[Convertio](https://convertio.co/pt/mp4-gif/)_
 
 - **Web:**
    - **Editor:** _[Visual Studio Code](https://code.visualstudio.com/)_
