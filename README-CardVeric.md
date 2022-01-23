@@ -20,6 +20,8 @@
 - [2. Funcionalidades](#2-funcionalidades)
 - [3. Usuários](#3-usuários)
 - [4. Planejamento do Projeto](#4-planejamento-do-projeto)
+   - [4.1 Scrum](#41-scrum)
+   - [4.2 Kanban](#42-kanban)
 - [5. Experiência do Usuário (UX) e Design de Interface (UI)](#5-experiência-do-usuário-ux-e-design-de-interface-ui)
 - [6. Instruções de Uso](#6-instruções-de-uso)
   - [6.1. Instalações](#61-instalações)
@@ -50,7 +52,7 @@ Com a ajuda do CardVeric, os principais usuários dessa aplicação são os come
   - `CardVeric` é um projeto desenvolvido em 2022, para o bootcamp da [Laboratoria Brasil](https://hub.laboratoria.la/br).
   - Esse projeto é baseado nas instruções apresentadas pelo `README` do [CardValidation](https://github.com/Laboratoria/SAP007-card-validation.git).
 
-  ### Scrum
+  ### 4.1 Scrum
 
   1. Para realizar o planejamento foi utilizado o `Scrum`, que é uma [metodologia ágil](https://agilemanifesto.org/principles.html) para gestão e planejamento de projetos de software, onde os projetos são divididos em ciclos, chamados de Sprints.
   2. O `Sprint` representa um conjunto de atividades devem ser executadas. As funcionalidades a serem implementadas em um projeto são mantidas em uma lista que é conhecida como `Product Backlog`. 
@@ -59,7 +61,7 @@ Com a ajuda do CardVeric, os principais usuários dessa aplicação são os come
   
   - Os Sprints da Laboratoria possuem duração de uma semana e são iniciadas todas as sextas-feiras. A Daily é realizada por meio de uma planilha e o Sprint Review é feito todas as quintas-feiras. 
 
-  ### Kanban
+  ### 4.2 Kanban
 
   - Para facilitar a organização sobre: _**O QUE FAZER, O QUE ESTOU FAZENDO e O QUE FOI FEITO**_, foi utilizado a metodologia `KANBAN`.
   - O objetivo é supervisionar, gerenciar e controlar o fluxo de tarefas que são feitas em cada etapa da produção. 
