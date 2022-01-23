@@ -77,30 +77,54 @@ Com a ajuda do CardVeric, os principais usuários dessa aplicação são os come
 
 ## 5. Experiência do Usuário (UX) e Design de Interface (UI)
 
-mostrar as reSpostas na própria página, não precisando fechar pop-pup
-cores que possuem contraste - adobe color
-Telas
-Explicações e mensagens
-Wireframe (p&b)
-Protótipo e Feedback --> Validação do protótipo
+### 5.1 Personas
 
+   - As personas do CardVeric são os comerciantes em geral que necessitam de ajuda para validar os cartões de crédito e débito de seus clientes, o mais rápido possível, antes dos mesmos pagarem pelos produtos e serviços prestados por eles. 
 
-  
-Cores
-formas
-Tipografia
-Ícones 
-  ### Criação do Protótipo
-  
-   - Para realizar o projeto  do bootcamp Laboratoria, foi realizado primeiro um protótipo simples (baixa fidelidade) usando papel e lápis.
-   - Em seguida foi mostrado a solução para uma das alunas desse bootcamp, para que ela o avaliasse, dando feedbacks sobre ele que foram anotados no próprio papel do feedback.
+### 5.2 Wireframe
+
+   - Para realizar o projeto  do bootcamp Laboratoria, foi realizado primeiro um protótipo simples (baixa fidelidade) usando papel e lápis. A sua criação foi dividido em: _**telas, explicações e mensagens, arquitetura de informação.**_
+
+   - _**Telas**_
+
+      - Pensando na facilidade de uso e no pouco tempo que os comerciantes tem para verificar os cartões, a aplicação funcionará em apenas uma página da web, onde possuirá um campo de entrada para insereir os números dos cartões. Após serem inseridos, basta apenas clicar no botão Verificar e esperar uns milésimos de segundos para que a resposta apareça logo abaixo desse botão. Não é necessário voltar na página anterior ou carregá-la novamente para inserir outro número. Também não possuirá [pop-ups](https://tecnoblog.net/responde/o-que-e-pop-up/) para os acessos recorrentes da aplicação, somente para as informações de Contatos e Sobre. 
+
+   - _**Explicações e Mensagens**_
+
+      - Para ajudar no uso da aplicação, existirá uma mensagem logo que a página é carregada, em cima do campo de entrada com a seguinte mensagem: Insirá o número do cartão. Após o comerciante inserir o número e verificar se o mesmo é válido ou não, uma nova mensagem surgirá acima do campo de entrada: Insirá outro número de cartão. Depois de inserir e verificar, novamente a resposta aparecerá em baixo do botão. Com as respostas aparecendo na própria página, não precisará carregar uma nova página e muito menos fechar telas de pou-ups.
+
+   - _**Arquitetura de Informação**_
+
+      - O mapa dessa aplicação acontecerá em apenas uma página ou nível, por se tratar de uma aplicação simples, onde todas as principais mudanças de informações não acontecerão em outras páginas e sim na mesma página, como as respostas das validações acontecem abaixo do botão Validar. Além de informações de outras páginas ocorrerem na própria tela inicial, como a página Sobre e Contatos que usaram pop-ups e após fechá-las no X, a tela inicial ficará visível, sem a necessidade de carregá-la novamente.
+
+### 5.3 Protótipo de Baixa Fidelidade
+
+   - Após o término do Wireframe, foi mostrado a solução para uma das alunas desse bootcamp, para que ela o avaliasse, dando feedbacks sobre ele que foram anotados no próprio papel do protótipo de baixa fidelidade.
+
+     <div>
+        <img alt="Protótipo CardVeric de baixa fidelidade" height="300" src="/src/img/prototipo-card-validation.jpeg">
+     </div>
+
+### 5.4 Protótipo Validado
+
    - Depois de todas as ideias e dicas estabelecidas, para validar esse protótipo, foi desenvolvido um novo protótipo (alta fidelidade) usando uma ferramenta digital para protótipo. A ferramenta utilizada foi o Figma, que é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web.
 
-   ### Protótipo de Baixa Fidelidade com Feedback
-   
-   <div>
-      <img alt="" height="300" src="/src/img/prototipo-card-validation.jpeg">
-   </div>
+cores que possuem contraste - adobe color
+
+  
+
+ESTILO DO DESIGN
+  MARCA
+  FORMAS GEOMÉTRICAS (ESTRUTURA)
+  BOTÕES
+ESPAÇAMENTO
+TIPOGRAFIA
+CORES
+ÍCONES
+LISTAGENS
+FORMULÁRIOS
+GESTOS E MICROINTERAÇÕES
+
 
 ## 6. Instruções de Uso:
 
