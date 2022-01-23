@@ -112,11 +112,6 @@ Protótipo e Feedback --> Validação do protótipo
      - Para mais informações sobre o produto, clique em _**Sobre**_.
      - Em caso de problemas com a aplicação ou deseje tirar dúvidas sobre ela, clique em _**Contatos**_.  
 
-   ### 6.3 Protótipo
-   <video controls autoplay loop muted poster><source src="https://youtu.be/cxgnVfzRG4A" type="video/mp4"></video>
-
-   
-
 ## 7. Tecnologias Utilizadas
 
 ### Aplicação na Web:
