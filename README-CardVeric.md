@@ -2,9 +2,14 @@
    <img alt="logo-CardVeric" src="/src/img/logo-pequeno.png">
 
 ## CardVeric verifica se o cartão de crédito e débito são válidos.
-
+  
 **Status do Projeto:** *Em andamento*
   
+<div style="display: inline_block">
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"> <img alt="Adri-HTML" height="35" width="35" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"></a>
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSSL" target="_blank"><img alt="Adri-CSS" height="35" width="35" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"></a>
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><img alt="Adri-Js" height="35" width="35" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"></a>
+</div>
 </div>
 
 ---
@@ -18,8 +23,8 @@
 - [5. Experiência do Usuário (UX)](#5-experiência-do-usuário-ux)
 - [6. Instruções de Uso](#6-instruções-de-uso)
   - [6.1. Instalações](#61-instalações)
-  - [6.2. Como usar o CardVeric?](#62-como-usar-o-cardveric?)
-- [7. Tecnologias Utilizadas](#7-tecnologias-utilizadas)
+  - [6.2. Como usar o CardVeric?](#62-como-usar-o-cardveric)
+- [7. Ferramentas Utilizadas](#7-ferramentas-utilizadas)
 - [8. Autora](#8-autora)
 
 ---
@@ -98,7 +103,7 @@ Protótipo e Feedback --> Validação do protótipo
    6. O comando `npm star` exibirá uma _**url**_ com a palavra _**localhost**_. Copie essa url, cole-a na [barra de endereço](https://pt.wikipedia.org/wiki/Barra_de_endere%C3%A7o) de seu navegador e aperte a tecla [Enter](https://pt.wikipedia.org/wiki/Enter_(tecla)).
    7. Pronto! Agora o site CardVeric aparecerá em seu navegador.
 
-   ---
+---
    
    ### 6.2 Como usar o CardVeric?
 
@@ -112,15 +117,8 @@ Protótipo e Feedback --> Validação do protótipo
      - Para mais informações sobre o produto, clique em _**Sobre**_.
      - Em caso de problemas com a aplicação ou deseje tirar dúvidas sobre ela, clique em _**Contatos**_.  
 
-## 7. Tecnologias Utilizadas
+## 7. Ferramentas Utilizadas:
 
-### Linguagens:
-- HTML
-- CSS
-- VanillaJS
-- Web APIs (DOM)
-
-### Ferramentas:
 - **Planejamento:**
    - **Scrum:** _[Trello](https://trello.com)_ 
 
@@ -136,13 +134,11 @@ Protótipo e Feedback --> Validação do protótipo
 
 <div>
    <img alt="Adriana-Watanabe" height="150" src="https://user-images.githubusercontent.com/97361694/150664694-707f976b-f640-47a2-96c7-86b14db235b5.png">
+</div>
 
 ### [Adriana Tiemi Watanabe](https://github.com/adrianatwatanabe)
 
 **Projeto do Bootcamp da _[Laboratoria](https://hub.laboratoria.la/br)_**
 
-- **E-mail:** _[adriana.t.watanabe@gmail.com](mailto:adriana.t.watanabe@gmail.com)_
-
-- **Linkedin:** _[Adriana Tiemi Watanabe](https://www.linkedin.com/in/adrianatwatanabe/)_
-
-</div>
+<a href = "mailto:adriana.t.watanabe@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
+<a href="https://www.linkedin.com/in/adrianatwatanabe" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> 
