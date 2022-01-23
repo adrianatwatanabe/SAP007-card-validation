@@ -55,8 +55,8 @@ Com a ajuda do CardVeric, os principais usuários dessa aplicação são os come
   ### 4.1 Scrum
 
   1. Para realizar o planejamento foi utilizado o `Scrum`, que é uma [metodologia ágil](https://agilemanifesto.org/principles.html) para gestão e planejamento de projetos de software, onde os projetos são divididos em ciclos, chamados de Sprints.
-  2. O `Sprint` representa um conjunto de atividades devem ser executadas. As funcionalidades a serem implementadas em um projeto são mantidas em uma lista que é conhecida como `Product Backlog`. 
-  3. A cada dia de uma Sprint, a há uma breve reunião chamada `Daily Scrum Meeting`. O objetivo é disseminar conhecimento sobre o que foi feito no dia anterior, identificar impedimentos e priorizar o trabalho do dia que se inicia, priorizando os itens do Product Backlog.
+  2. O `Sprint` representa um conjunto de atividades que devem ser executadas. As funcionalidades a serem implementadas em um projeto são mantidas em uma lista que é conhecida como `Product Backlog`. 
+  3. A cada dia de uma Sprint, há uma breve reunião chamada `Daily Scrum Meeting`. O objetivo é disseminar conhecimento sobre o que foi feito no dia anterior, identificar impedimentos e priorizar o trabalho do dia que se inicia, priorizando os itens do Product Backlog.
   4. Ao final de um Sprint, é apresentado as funcionalidades implementadas em uma `Sprint Review`. Finalmente, faz-se uma `Sprint Retrospective` e parte para o planejamento do próximo Sprint. Assim reinicia-se o ciclo.
   
   - Os Sprints da Laboratoria possuem duração de uma semana e são iniciadas todas as sextas-feiras. A Daily é realizada por meio de uma planilha e o Sprint Review é feito todas as quintas-feiras. 
@@ -121,7 +121,7 @@ Tipografia
       $ npm -v 
       ```
  
-   3. Localize o diretório do projeto CardVeric em seu computador por meio do temrinal, utilizando o comando cd (Change Directory).
+   3. Localize o diretório do projeto CardVeric em seu computador por meio do temminal, utilizando o comando cd (Change Directory).
    4. Instale as dependências do projeto executando o seguinte comando:
 
       ```
@@ -138,7 +138,7 @@ Tipografia
       ```
       $ npm start
       ```
-   6. O comando `npm star` exibirá uma _**url**_ com a palavra _**localhost**_. Copie essa url, cole-a na [barra de endereço](https://pt.wikipedia.org/wiki/Barra_de_endere%C3%A7o) de seu navegador e aperte a tecla [Enter](https://pt.wikipedia.org/wiki/Enter_(tecla)).
+   6. O comando `npm star` exibirá uma _**url**_ com a palavra _**localhost**_. Copie essa url, cole-a na [barra de endereço](https://pt.wikipedia.org/wiki/Barra_de_endere%C3%A7o) do seu navegador e aperte a tecla [Enter](https://pt.wikipedia.org/wiki/Enter_(tecla)).
    7. Pronto! Agora o site CardVeric aparecerá em seu navegador.
 
 ---
