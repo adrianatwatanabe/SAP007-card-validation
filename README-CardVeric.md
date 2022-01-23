@@ -114,7 +114,7 @@ Protótipo e Feedback --> Validação do protótipo
 
 ## 7. Tecnologias Utilizadas
 
-### Aplicação na Web:
+### Linguagens:
 - HTML
 - CSS
 - VanillaJS
@@ -122,22 +122,20 @@ Protótipo e Feedback --> Validação do protótipo
 
 ### Ferramentas:
 - **Planejamento:**
-   - **Scrum:** _[Trello](https://trello.com/b/e9L8eGe5)_ 
+   - **Scrum:** _[Trello](https://trello.com)_ 
 
 - **UX/UI**:
-   - **Edição de Imagens:** _Adobe Photoshop e Canvas_
-   - **Paleta de Cores com Acessibilidade:** _Adobe Color_
-   - **Protótipo:**  _[Figma](https://www.figma.com/proto/FAdITvw78jNMkHuW1GwmJT/Card-Validation?node-id=38%3A142&starting-point-node-id=38%3A142)_
+   - **Edição de Imagens:** _[Canvas](https://www.canva.com/pt_br/)_
+   - **Paleta de Cores com Acessibilidade:** _[Adobe Color](https://color.adobe.com/pt/create/color-wheel)_
+   - **Protótipo:**  _[Figma](https://www.figma.com/)_
 
 - **Web:**
-   - **Editor:** _Visual Studio Code_
-   - **Editor de Markdown:** _Dillinger_
+   - **Editor:** _[Visual Studio Code](https://code.visualstudio.com/)_
 
 ## 8. Autora
 
 <div>
-   <img alt="Adriana-Watanabe" src="https://user-images.githubusercontent.com/97361694/150664694-707f976b-f640-47a2-96c7-86b14db235b5.png">
-</div>
+   <img alt="Adriana-Watanabe" height="150" src="https://user-images.githubusercontent.com/97361694/150664694-707f976b-f640-47a2-96c7-86b14db235b5.png">
 
 ### [Adriana Tiemi Watanabe](https://github.com/adrianatwatanabe)
 
@@ -146,3 +144,5 @@ Protótipo e Feedback --> Validação do protótipo
 - **E-mail:** _[adriana.t.watanabe@gmail.com](mailto:adriana.t.watanabe@gmail.com)_
 
 - **Linkedin:** _[Adriana Tiemi Watanabe](https://www.linkedin.com/in/adrianatwatanabe/)_
+
+</div>
