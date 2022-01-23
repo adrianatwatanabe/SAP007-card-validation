@@ -135,6 +135,10 @@ Protótipo e Feedback --> Validação do protótipo
 
 ## 8. Autora
 
+<div>
+   <img alt="Adriana-Watanabe" src="https://user-images.githubusercontent.com/97361694/150664694-707f976b-f640-47a2-96c7-86b14db235b5.png">
+</div>
+
 ### [Adriana Tiemi Watanabe](https://github.com/adrianatwatanabe)
 
 **Projeto do Bootcamp da _[Laboratoria](https://hub.laboratoria.la/br)_**
@@ -142,8 +146,3 @@ Protótipo e Feedback --> Validação do protótipo
 - **E-mail:** _[adriana.t.watanabe@gmail.com](mailto:adriana.t.watanabe@gmail.com)_
 
 - **Linkedin:** _[Adriana Tiemi Watanabe](https://www.linkedin.com/in/adrianatwatanabe/)_
-
-
-
-
-
