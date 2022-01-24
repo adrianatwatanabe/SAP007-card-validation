@@ -60,7 +60,7 @@ Essa validação do cartão de crédito é o primeiro passo para aceitar um paga
 
    - _**Telas, Mensagens e Botões**_
 
-      - Pensando na facilidade de uso e no pouco tempo que os comerciantes tem para verificar os cartões, a aplicação funcionará apenas na _**Tela Inicial**_, onde possuirá um campo de entrada para insereir os números dos cartões. Após serem inseridos, basta apenas clicar no botão _**Verificar**_ e esperar uns milésimos de segundos para que a resposta apareça logo abaixo desse botão e a mensagem acima do campo de entrada mudará para _**Número do cartão**_. Também o botão _**Validar**_ mudará para _**Insirá outro número**_, não sendo necessário atualizar a página para limpar o campo de entrada.
+      - Pensando na facilidade de uso e no pouco tempo que os comerciantes tem para verificar os cartões, a aplicação funcionará apenas na _**Tela Inicial**_, onde possuirá um campo de entrada para inserir os números dos cartões. Após serem inseridos, basta apenas clicar no botão _**Verificar**_ e esperar uns milésimos de segundos para que a resposta apareça logo abaixo desse botão e a mensagem acima do campo de entrada mudará para _**Número do cartão**_. Também o botão _**Validar**_ mudará para _**Inserir outro número**_, não sendo necessário atualizar a página para limpar o campo de entrada.
       - Caso queira limpar a tela, não mostrando nenhum número de cartão, é só clicar na [logo](/src/img/logo-pequeno.png) ou atualizar a página. 
 
    - _**Arquitetura de Informação**_
@@ -79,34 +79,33 @@ Essa validação do cartão de crédito é o primeiro passo para aceitar um paga
 
 ### 4.1 Marca CardVeric
 
-   - CardVeric é uma empresa fictícia de tecnologia inciada no bootcamp da Laboratoria, especializada em validação de cartões de crédito e débito, transmitindo uma certeza e alegria quando o cartão é validado. Isso é representado em seu logotipo com o símbolo de check in com cores alegres, como: laranja, amarelo e rosa, mas também transmite a seriedade por meio da tipografia futurista aplicada com o nome da marca. A cor da tipografia e do check in, é um tom alaranjado que é visível tanto para fundos de tela mais claros e escuros.
+   - CardVeric é uma empresa fictícia de tecnologia iniciada no bootcamp da Laboratoria, especializada em validação de cartões de crédito e débito, transmitindo uma certeza e alegria quando o cartão é validado. Isso é representado em seu logotipo com o símbolo de check in com cores alegres, como: laranja, amarelo e rosa, mas também transmite a seriedade por meio da tipografia futurista aplicada com o nome da marca. A cor da tipografia e do check in, é um tom alaranjado que é visível tanto para fundos de tela mais claros e escuros.
 
-   <div>
-        <img alt="logotipo-cardveric" height="100" src="/src/img/logo-pequeno.png">
-        <img alt="cor-logotipo-cardveric" height="100" src="/src/img/color-logo.png">
-  </div>
+     <div>
+          <img alt="logotipo-cardveric" height="100" src="/src/img/logo-pequeno.png"><img alt="cor-logotipo-cardveric" height="100" src="/src/img/color-logo.png">
+     </div>
 
 ### 4.2 Design Aplicado
 
    - _**Estilo:**_ 
    
-      - A aplicação utiliza um estilo _**[flat design](https://www.chiefofdesign.com.br/ui-design/)**_, reduzindo em formas planas, sem sombreamento, sem texturas e reflexos. Ele é focado mais nos conteúdos e uma navegação mais simples, exceto as logos dos emissores de cartão de crédito e débito que possuem outros estilos de design. A estrutura da aplicação escolhida, segue formas geométricas mais retas, sendo arredondados apenas nos vértices de botões e nos pop-ups.
+      - A aplicação utiliza um estilo _**[flat design](https://www.chiefofdesign.com.br/ui-design/)**_, reduzindo em formas planas, sem sombreamento, sem texturas e reflexos. Ele é focado mais nos conteúdos e uma navegação mais simples, exceto os logos dos emissores de cartão de crédito e débito que possuem outros estilos de design. A estrutura da aplicação escolhida, segue formas geométricas mais retas, sendo arredondados apenas nos vértices de botões e nos pop-ups.
 
    - _**Tipografia e Hierarquia:**_
    
       - A [tipografia](https://www.chiefofdesign.com.br/tipografia/) escolhida possui fonte sem serifa, com a font-family: Arial, Verdana, Helvetica e Sans-Serif. São letras fáceis de serem visualizadas e lidas em aplicações da web.
-      - Para o título "Validação de Cartãp de Crédito e Débito" da página ser destacado, será utilizado em [caixa alta com alinhamento centralizado](https://www.chiefofdesign.com.br/tipografia-02/). Já para os seguintes textos: "Insira o número do cartão" e "Número do cartão", serão em caixa baixa, mas somente a primeira letra em caixa alta, igualmente para as palavras "Sobre" e "Contatos". 
-      - O tamanho dessas duas frases deverão serem pequenos em relação ao título da página e a tipografia encontrada nos botões serão do mesmo tamanho que elas, mas em caixa alta. Para as palavras "Sobre"e "Contatos", deverão serem em tamanhos menores que essas frases.
+      - Para o título "Validação de Cartão de Crédito e Débito" da página ser destacado, será utilizado em [caixa alta com alinhamento centralizado](https://www.chiefofdesign.com.br/tipografia-02/). Já para os seguintes textos: "Insira o número do cartão" e "Número do cartão", serão em caixa baixa, mas somente a primeira letra em caixa alta, igualmente para as palavras "Sobre" e "Contatos". 
+      - O tamanho dessas duas frases deverão ser pequenas em relação ao título da página e a tipografia encontrada nos botões serão do mesmo tamanho que elas, mas em caixa alta. Para as palavras "Sobre"e "Contatos", deverão ser em tamanhos menores que essas frases.
 
    - _**Cores:**_
    
-     - As cores escolhidas para o site foram pensadas em cores que transmitem seriedade e que pudessem serem contrastadas entre a cor do texto e o seu plano de fundo, para facilitar a leitura e legibilidade. Para isso foi utilizado a ferramenta da _[Adobe Color](https://color.adobe.com/pt/create/color-wheel)_ que testa, na parte de acessibilidade, as cores de textos com o seu plano de fundo. Foram testadas com: a cor de plano de fundo da aplicação em si, dos botões e pop-ups. 
-     - Para transmitir seriedade e o constraste necessário, foi usado a [Psicologia das Cores](https://www.chiefofdesign.com.br/psicologia-das-cores/#:~:text=J%C3%A1%20foi%20falado%20aqui%20no,imprecisas%20quando%20desconhecemos%20o%20contexto.):
+     - As cores escolhidas para o site foram pensadas em cores que transmitem seriedade e que pudessem ser contrastadas entre a cor do texto e o seu plano de fundo, para facilitar a leitura e legibilidade. Para isso foi utilizado a ferramenta da _[Adobe Color](https://color.adobe.com/pt/create/color-wheel)_ que testa, na parte de acessibilidade, as cores de textos com o seu plano de fundo. Foram testadas com: a cor de plano de fundo da aplicação em si, dos botões e pop-ups. 
+     - Para transmitir seriedade e o contraste necessário, foi usado a [Psicologia das Cores](https://www.chiefofdesign.com.br/psicologia-das-cores/#:~:text=J%C3%A1%20foi%20falado%20aqui%20no,imprecisas%20quando%20desconhecemos%20o%20contexto.):
 
         - _**Azul:**_ presente na maior parte da aplicação, essa cor é usada quando necessita-se transmitir confiança e segurança como prioridade.
         - _**Amarelo:**_ essa cor foi usada para chamar a atenção e transmitir um pouco de alegria, quebrando um pouco a seriedade da aplicação.
-        - _**Laranja:**_ usada quando a intenção é transmitir vibração, entusiasmo, humor. Essas qualidades são características de quem é amigável. Laranja foi usado para o título da página por ser uma cor complementar ao azul e por dar contraste para a página no geral.
-        - _**Preto, Cinza e Branco:**_ são cores consideradas neutras, podendo serem utilizadas em textos para que haja constraste com o plano de fundo ou ao contrário.
+        - _**Laranja:**_ usada quando a intenção é transmitir vibração, entusiasmo e humor. Essas qualidades são características de quem é amigável. Laranja foi usado para o título da página por ser uma cor complementar ao azul e por dar contraste para a página no geral.
+        - _**Preto, Cinza e Branco:**_ são cores consideradas neutras, podendo ser utilizadas em textos para que haja contraste com o plano de fundo ou ao contrário.
 
    - _**Transições e Microinterações:**_
    
