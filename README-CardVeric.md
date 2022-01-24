@@ -18,14 +18,20 @@
 
 - [1. Introdução](#1-introdução)
 - [2. Funcionalidades](#2-funcionalidades)
-- [3. Usuários](#3-usuários)
-- [4. Planejamento do Projeto](#4-planejamento-do-projeto)
-   - [4.1 Scrum](#41-scrum)
-   - [4.2 Kanban](#42-kanban)
-- [5. Experiência do Usuário (UX) e Design de Interface (UI)](#5-experiência-do-usuário-ux-e-design-de-interface-ui)
+- [3. Experiênci do Usuário (UX)](#3-experiência-do-usuário-ux)
+   - [3.1 Personas ou Usuários](#31-personas-ou-usuários)
+   - [3.2 Wireframe](#32-wireframe)
+   - [3.3 Protótipo Simples com Feedbacks](#33-protótipo-simples-com-feedbacks)
+- [4. Design de Interface (UI)](#4-design-de-interface-ui)
+   - [4.1 Marca CardVeric](#41-marca-cardveric)
+   - [4.2 Aplicacão](#42-aplicação)
+   - [4.3 Protótipo Validado](#43-protótipo-validado)
+- [5. Planejamento do Projeto](#5-planejamento-do-projeto)
+   - [5.1 Scrum](#51-scrum)
+   - [5.2 Kanban](#52-kanban)
 - [6. Instruções de Uso](#6-instruções-de-uso)
-  - [6.1. Instalações](#61-instalações)
-  - [6.2. Como usar o CardVeric?](#62-como-usar-o-cardveric)
+   - [6.1. Instalações](#61-instalações)
+   - [6.2. Como usar o CardVeric?](#62-como-usar-o-cardveric)
 - [7. Ferramentas Utilizadas](#7-ferramentas-utilizadas)
 - [8. Autora](#8-autora)
 
@@ -39,49 +45,16 @@ A aplicação CardVeric é uma aplicação que verifica se os cartões de crédi
 
 A validação de um cartão de crédito refere-se ao processo de execução do [algoritmo de Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm) que executa cálculos utilizando o número do cartão. Quando o algoritmo mostra que o cartão é válido, significa que apenas o número do cartão está entre aqueles que poderiam existir em uma determinada empresa de cartões de crédito.
     
-Essa validação do cartão de crédito é o primeiro passo para aceitar um pagamento com cartão. Após uma validação bem sucedida, o comerciante irá introduzir o número do cartão em um programa de software comercial ou uma máquina de cartão de crédito, que envia o número da conta para o emissor do cartão para autorização. Este é o ponto do processo em que um cartão pode ser rejeitado por crédito remanescente insuficiente. Empresas de cartão de crédito também vão recusar cartões expirados ou cartões vinculados a contas fechadas. A autorização com sucesso permite que o comerciante coloque um valor, que completa a transação inicial. 
+Essa validação do cartão de crédito é o primeiro passo para aceitar um pagamento com cartão. Após uma validação bem sucedida, o comerciante irá introduzir o número do cartão em um programa de software comercial ou uma máquina de cartão de crédito, que envia o número da conta para o emissor do cartão para realizar a autorização e confirmar o pagamento.
 
-## 3. Usuários
+## 3. Experiência do Usuário (UX)
 
-Com o aumento crescente das vendas online causado devido a pandemia de Covid-19, as vendas on-line ganharam [13 milhões de novos consumidores no Brasil em 2020](https://g1.globo.com/economia/tecnologia/noticia/2021/03/29/faturamento-de-lojas-on-line-cresce-41percent-em-2020-maior-alta-em-13-anos.ghtml), segundo levantamento da Ebit/Nielsen. Além de 83% dos novos compradores afirmarem que repetiriam a compra pela internet. E com a ajuda das redes sociais, como Instagram, Facebook, WhatshApp e TikTok, isso facilitou  registrando um aumento de [185% entre 2019 e 2020 nos negócios](https://mercadoeconsumo.com.br/2021/02/23/vendas-no-e-commerce-pelas-redes-sociais-saltam-de-22-para-34-em-2020/), representando um terço dessas vendas, de acordo com a Nuvemshop. Então boa parte das empresas precisou se digitalizar, provocando um salto expressivo no mercado digital.
+### 3.1 Personas ou Usuários
 
-Com a ajuda do CardVeric, os principais usuários dessa aplicação são os comerciantes em geral, mas principalmente os que suspeitam de fraude, identificando as informações de pagamento fraudulento mais rapidamente e evitando as perdas de tempo e dinheiro associados, por meio da identificação dos números de cartões de crédito e débito falsos antes de solicitar uma autorização da empresa do cartão. 
+   - As personas do CardVeric são os comerciantes em geral, mas principalmente os que suspeitam de fraude,  por necessitarem de ajuda para validar os cartões de crédito e débito de seus clientes, identificando as informações de pagamento fraudulento mais rapidamente e evitando as perdas de tempo e dinheiro associados, por meio da identificação dos números de cartões de crédito e débito falsos antes de solicitar uma autorização da empresa do cartão, para o pagamento dos produtos e serviços prestados por eles.
+   - Provavelmente a procura por verificação de cartão de crédito e débito tem aumentado, pois com o aumento crescente das vendas online causado devido a pandemia de Covid-19, as vendas on-line ganharam [13 milhões de novos consumidores no Brasil em 2020](https://g1.globo.com/economia/tecnologia/noticia/2021/03/29/faturamento-de-lojas-on-line-cresce-41percent-em-2020-maior-alta-em-13-anos.ghtml), segundo levantamento da Ebit/Nielsen. Além de 83% dos novos compradores afirmarem que repetiriam a compra pela internet. E com a ajuda das redes sociais, como Instagram, Facebook, WhatshApp e TikTok, isso facilitou  registrando um aumento de [185% entre 2019 e 2020 nos negócios](https://mercadoeconsumo.com.br/2021/02/23/vendas-no-e-commerce-pelas-redes-sociais-saltam-de-22-para-34-em-2020/), representando um terço dessas vendas, de acordo com a Nuvemshop. Então boa parte das empresas precisou se digitalizar, provocando um salto expressivo no mercado digital. 
 
-## 4. Planejamento do Projeto
-  
-  - _CardVeric_ é um projeto desenvolvido em 2022, para o bootcamp da [Laboratoria Brasil](https://hub.laboratoria.la/br).
-  - Esse projeto é baseado nas instruções apresentadas pelo _README_ do [CardValidation](https://github.com/Laboratoria/SAP007-card-validation.git).
-
-  ### 4.1 Scrum
-
-  1. Para realizar o planejamento foi utilizado o _**Scrum**_, que é uma [metodologia ágil](https://agilemanifesto.org/principles.html) para gestão e planejamento de projetos de software, onde os projetos são divididos em ciclos, chamados de Sprints.
-  2. O _**Sprint**_ representa um conjunto de atividades que devem ser executadas. As funcionalidades a serem implementadas em um projeto são mantidas em uma lista que é conhecida como _**Product Backlog**_. 
-  3. A cada dia de uma Sprint, há uma breve reunião chamada _**Daily Scrum Meeting**_. O objetivo é disseminar conhecimento sobre o que foi feito no dia anterior, identificar impedimentos e priorizar o trabalho do dia que se inicia, priorizando os itens do _**Product Backlog**_.
-  4. Ao final de um Sprint, é apresentado as funcionalidades implementadas em uma _**Sprint Review**_. Finalmente, faz-se uma _**Sprint Retrospective**_ e parte para o planejamento do próximo Sprint. Assim reinicia-se o ciclo.
-  
-  - Os Sprints da Laboratoria possuem duração de uma semana e são iniciadas todas as sextas-feiras. A Daily é realizada por meio de uma planilha e o Sprint Review é feito todas as quintas-feiras. 
-
-  ### 4.2 Kanban
-
-  - Para facilitar a organização sobre: _**O QUE FAZER, O QUE ESTOU FAZENDO e O QUE FOI FEITO**_, foi utilizado a metodologia _**Kanban**_.
-  - O objetivo é supervisionar, gerenciar e controlar o fluxo de tarefas que são feitas em cada etapa da produção. 
-  - Ele é dividido em 3 principais colunas: _**To Do, Doing e Done**_, e, os cartões são movidos de coluna para coluna conforme o seu status é mudado. 
-  - A ferramenta utilizada para a organização foi o [Trello](https://trello.com/pt-BR) e ela foi dividida em cinco colunas: _**Files, To Do Backlog, To Do, Ongoing e Done.**_
-     - _**Files**_: são os arquivos que devem ser entregados ao final do projeto. Servindo mais como um lembrete com checklist especificados no _README_ do [CardValidation](https://github.com/Laboratoria/SAP007-card-validation.git). Eles possuem a etiqueta azul com nome de Files.
-     - _**To Do Backlog**_: são os microprojetos a serem feitos por etapas e sequências, ordenado em ordem crescente. Ao final do Scrum, o projeto estará funcionando, mesmo não estando completo com todos os requisitos apresentados no README do CardValidation. Eles possuem a etiqueta rosa com o nome Backlog, mas também poderão ter outras etiquetas com nível de prioridade para fazer o Ongoing. 
-     - _**To Do**_: como o projeto é de um bootcamp, nesta coluna estão todos os tópicos a serem estudados, de acordo com o que é necessário para o Backlog. Eles são separados por nível de prioridade de 1 a 6, onde cada cor recebe uma cor.
-     - _**Ongoing**_: os cartões do To Do Backlog e To Do são movidos para ele, obedecendo o nível de prioridade conforme o que é necessário estudar para realizar os baby steps (microprojetos). 
-     - _**Done**_: nada mais é que os cartões concluídos no Ongoing.
-
-     - ### [KANBAN DO CARDVERIC](https://trello.com/b/e9L8eGe5/lab-primeiro-proj)
-
-## 5. Experiência do Usuário (UX) e Design de Interface (UI)
-
-### 5.1 Personas
-
-   - As personas do CardVeric são os comerciantes em geral que necessitam de ajuda para validar os cartões de crédito e débito de seus clientes, o mais rápido possível, antes dos mesmos pagarem pelos produtos e serviços prestados por eles. 
-
-### 5.2 Wireframe
+### 3.2 Wireframe
 
    - Para realizar o projeto  do bootcamp Laboratoria, foi realizado primeiro um protótipo simples (baixa fidelidade) usando papel e lápis. A sua criação foi dividido em: _**telas, explicações e mensagens, arquitetura de informação.**_
 
@@ -94,7 +67,7 @@ Com a ajuda do CardVeric, os principais usuários dessa aplicação são os come
 
       - O mapa dessa aplicação acontecerá em apenas uma página ou nível, por se tratar de uma aplicação simples, onde todas as principais mudanças de informações não acontecerão em outras páginas e sim na mesma página, como as respostas das validações acontecem abaixo do botão Validar e ao limpar o campo de entrada. Além de informações de outras páginas ocorrerem na própria tela inicial, como a página _**Sobre**_ e _**Contatos**_ que usaram [pop-ups](https://tecnoblog.net/responde/o-que-e-pop-up/) e após fechá-las no X, a tela inicial ficará visível, sem a necessidade de carregá-la novamente.
 
-### 5.3 Feedbacks
+### 3.3 Protótipo Simples com Feedbacks
 
    - Após o término do Wireframe, foi mostrado a solução para uma das alunas desse bootcamp, para que ela o avaliasse, dando feedbacks sobre ele que foram anotados no próprio papel do protótipo de baixa fidelidade.
 
@@ -102,7 +75,13 @@ Com a ajuda do CardVeric, os principais usuários dessa aplicação são os come
         <img alt="Protótipo CardVeric de baixa fidelidade" height="300" src="/src/img/prototipo-card-validation.jpeg">
      </div>
 
-### 5.4 Protótipo Validado
+## 4. Design de Interface (UI)
+
+### 4.1 Marca CardVeric
+
+### 4.2 Aplicação
+
+### 4.3 Protótipo Validado
 
    - Depois de todas as ideias e dicas estabelecidas, para validar esse protótipo, foi desenvolvido um novo protótipo (alta fidelidade) usando uma ferramenta digital para protótipo. A ferramenta utilizada foi o Figma, que é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web.
    - [Protótipo no Figma](https://www.figma.com/proto/FAdITvw78jNMkHuW1GwmJT/Card-Validation?node-id=78%3A223&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=78%3A223)
@@ -125,6 +104,36 @@ Com a ajuda do CardVeric, os principais usuários dessa aplicação são os come
       - Espaçamento
     
 - _**Microinterações:**_
+
+
+
+## 5. Planejamento do Projeto
+  
+  - _CardVeric_ é um projeto desenvolvido em 2022, para o bootcamp da [Laboratoria Brasil](https://hub.laboratoria.la/br).
+  - Esse projeto é baseado nas instruções apresentadas pelo _README_ do [CardValidation](https://github.com/Laboratoria/SAP007-card-validation.git).
+
+  ### 5.1 Scrum
+
+  1. Para realizar o planejamento foi utilizado o _**Scrum**_, que é uma [metodologia ágil](https://agilemanifesto.org/principles.html) para gestão e planejamento de projetos de software, onde os projetos são divididos em ciclos, chamados de Sprints.
+  2. O _**Sprint**_ representa um conjunto de atividades que devem ser executadas. As funcionalidades a serem implementadas em um projeto são mantidas em uma lista que é conhecida como _**Product Backlog**_. 
+  3. A cada dia de uma Sprint, há uma breve reunião chamada _**Daily Scrum Meeting**_. O objetivo é disseminar conhecimento sobre o que foi feito no dia anterior, identificar impedimentos e priorizar o trabalho do dia que se inicia, priorizando os itens do _**Product Backlog**_.
+  4. Ao final de um Sprint, é apresentado as funcionalidades implementadas em uma _**Sprint Review**_. Finalmente, faz-se uma _**Sprint Retrospective**_ e parte para o planejamento do próximo Sprint. Assim reinicia-se o ciclo.
+  
+  - Os Sprints da Laboratoria possuem duração de uma semana e são iniciadas todas as sextas-feiras. A Daily é realizada por meio de uma planilha e o Sprint Review é feito todas as quintas-feiras. 
+
+  ### 5.2 Kanban
+
+  - Para facilitar a organização sobre: _**O QUE FAZER, O QUE ESTOU FAZENDO e O QUE FOI FEITO**_, foi utilizado a metodologia _**Kanban**_.
+  - O objetivo é supervisionar, gerenciar e controlar o fluxo de tarefas que são feitas em cada etapa da produção. 
+  - Ele é dividido em 3 principais colunas: _**To Do, Doing e Done**_, e, os cartões são movidos de coluna para coluna conforme o seu status é mudado. 
+  - A ferramenta utilizada para a organização foi o [Trello](https://trello.com/pt-BR) e ela foi dividida em cinco colunas: _**Files, To Do Backlog, To Do, Ongoing e Done.**_
+     - _**Files**_: são os arquivos que devem ser entregados ao final do projeto. Servindo mais como um lembrete com checklist especificados no _README_ do [CardValidation](https://github.com/Laboratoria/SAP007-card-validation.git). Eles possuem a etiqueta azul com nome de Files.
+     - _**To Do Backlog**_: são os microprojetos a serem feitos por etapas e sequências, ordenado em ordem crescente. Ao final do Scrum, o projeto estará funcionando, mesmo não estando completo com todos os requisitos apresentados no README do CardValidation. Eles possuem a etiqueta rosa com o nome Backlog, mas também poderão ter outras etiquetas com nível de prioridade para fazer o Ongoing. 
+     - _**To Do**_: como o projeto é de um bootcamp, nesta coluna estão todos os tópicos a serem estudados, de acordo com o que é necessário para o Backlog. Eles são separados por nível de prioridade de 1 a 6, onde cada cor recebe uma cor.
+     - _**Ongoing**_: os cartões do To Do Backlog e To Do são movidos para ele, obedecendo o nível de prioridade conforme o que é necessário estudar para realizar os baby steps (microprojetos). 
+     - _**Done**_: nada mais é que os cartões concluídos no Ongoing.
+
+     - ### [KANBAN DO CARDVERIC](https://trello.com/b/e9L8eGe5/lab-primeiro-proj)
 
 
 ## 6. Instruções de Uso:
