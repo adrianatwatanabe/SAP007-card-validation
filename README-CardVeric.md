@@ -81,11 +81,10 @@ Essa validação do cartão de crédito é o primeiro passo para aceitar um paga
 
    - CardVeric é uma empresa fictícia de tecnologia inciada no bootcamp da Laboratoria, especializada em validação de cartões de crédito e débito, transmitindo uma certeza e alegria quando o cartão é validado. Isso é representado em seu logotipo com o símbolo de check in com cores alegres, como: laranja, amarelo e rosa, mas também transmite a seriedade por meio da tipografia futurista aplicada com o nome da marca. A cor da tipografia e do check in, é um tom alaranjado que é visível tanto para fundos de tela mais claros e escuros.
 
-     <div>
+   <div align="center">
         <img alt="logotipo-cardveric" height="100" src="/src/img/logo-pequeno.png">
-        <br>
-        <img alt="cor-logotipo-cardveric" height="60" src="/src/img/logo-color.png">
-     </div>
+        <img alt="cor-logotipo-cardveric" height="100" src="/src/img/logo-color.png">
+  </div>
     
 
 ### 4.2 Aplicação
