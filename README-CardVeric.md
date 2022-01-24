@@ -199,7 +199,7 @@ Essa validação do cartão de crédito é o primeiro passo para aceitar um paga
    8. Em caso de problemas com a aplicação ou deseje tirar dúvidas sobre ela, clique em `Contatos`.
 
       <div>
-          <img alt="" height="300" src="/src/img/prototipo.gif">
+          <img alt="" height="300" src="/src/img/prototype.gif">
       </div> 
 
 ## 7. Ferramentas Utilizadas:
