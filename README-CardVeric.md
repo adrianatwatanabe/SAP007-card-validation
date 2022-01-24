@@ -90,23 +90,27 @@ Essa validação do cartão de crédito é o primeiro passo para aceitar um paga
 
    - _**Estilo:**_ 
    
-      - A aplicação utiliza um estilo _**flat design**_, reduzindo em formas planas, sem sombreamento, sem texturas e reflexos. Ele é focado mais nos conteúdos e uma navegação mais simples, exceto as logos dos emissores de cartão de crédito e débito que possuem outros estilos de design. A estrutura da aplicação escolhida, segue formas geométricas mais retas, sendo arredondados apenas nos vértices de botões e nos pop-ups.
+      - A aplicação utiliza um estilo _**[flat design](https://www.chiefofdesign.com.br/ui-design/)**_, reduzindo em formas planas, sem sombreamento, sem texturas e reflexos. Ele é focado mais nos conteúdos e uma navegação mais simples, exceto as logos dos emissores de cartão de crédito e débito que possuem outros estilos de design. A estrutura da aplicação escolhida, segue formas geométricas mais retas, sendo arredondados apenas nos vértices de botões e nos pop-ups.
 
-   - _**Tipografia:**_
+   - _**Tipografia e Hierarquia:**_
    
-      - A tipografia escolhida possui fonte sem serifa, com a font-family: Arial, Verdana, Helvetica e Sans-Serif. São letras fáceis de serem visualizadas e lidas em aplicações da web.
+      - A [tipografia](https://www.chiefofdesign.com.br/tipografia/) escolhida possui fonte sem serifa, com a font-family: Arial, Verdana, Helvetica e Sans-Serif. São letras fáceis de serem visualizadas e lidas em aplicações da web.
+      - Para o título "Validação de Cartãp de Crédito e Débito" da página ser destacado, será utilizado em [caixa alta com alinhamento centralizado](https://www.chiefofdesign.com.br/tipografia-02/). Já para os seguintes textos: "Insira o número do cartão" e "Número do cartão", serão em caixa baixa, mas somente a primeira letra em caixa alta, igualmente para as palavras "Sobre" e "Contatos". 
+      - O tamanho dessas duas frases deverão serem pequenos em relação ao título da página e a tipografia encontrada nos botões serão do mesmo tamanho que elas, mas em caixa alta. Para as palavras "Sobre"e "Contatos", deverão serem em tamanhos menores que essas frases.
 
    - _**Cores:**_
    
      - As cores escolhidas para o site foram pensadas em cores que transmitem seriedade e que pudessem serem contrastadas entre a cor do texto e o seu plano de fundo, para facilitar a leitura e legibilidade. Para isso foi utilizado a ferramenta da _[Adobe Color](https://color.adobe.com/pt/create/color-wheel)_ que testa, na parte de acessibilidade, as cores de textos com o seu plano de fundo. Foram testadas com: a cor de plano de fundo da aplicação em si, dos botões e pop-ups. 
-     - Psicologia das cores
+     - Para transmitir seriedade e o constraste necessário, foi usado a [Psicologia das Cores](https://www.chiefofdesign.com.br/psicologia-das-cores/#:~:text=J%C3%A1%20foi%20falado%20aqui%20no,imprecisas%20quando%20desconhecemos%20o%20contexto.):
 
+        - _**Azul:**_ presente na maior parte da aplicação, essa cor é usada quando necessita-se transmitir confiança e segurança como prioridade.
+        - _**Amarelo:**_ essa cor foi usada para chamar a atenção e transmitir um pouco de alegria, quebrando um pouco a seriedade da aplicação.
+        - _**Laranja:**_ usada quando a intenção é transmitir vibração, entusiasmo, humor. Essas qualidades são características de quem é amigável. Laranja foi usado para o título da página por ser uma cor complementar ao azul e por dar contraste para a página no geral.
+        - _**Preto, Cinza e Branco:**_ são cores consideradas neutras, podendo serem utilizadas em textos para que haja constraste com o plano de fundo ou ao contrário.
 
-   - _**Hierarquia:**_
-      - Espaçamento
-    
-- _**Microinterações:**_
-
+   - _**Transições e Microinterações:**_
+   
+      - As transições e efeitos na páginas serão o mais simples possível e rápidas de serem concluídas, para facilitar o seu uso e não fazer com que os comerciantes percam tempo usando a aplicação, podendo deixarem de usá-la.
 
 ### 4.3 Protótipo Validado
 
