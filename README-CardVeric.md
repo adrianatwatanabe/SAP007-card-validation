@@ -81,39 +81,37 @@ Essa validação do cartão de crédito é o primeiro passo para aceitar um paga
 
    - CardVeric é uma empresa fictícia de tecnologia inciada no bootcamp da Laboratoria, especializada em validação de cartões de crédito e débito, transmitindo uma certeza e alegria quando o cartão é validado. Isso é representado em seu logotipo com o símbolo de check in com cores alegres, como: laranja, amarelo e rosa, mas também transmite a seriedade por meio da tipografia futurista aplicada com o nome da marca. A cor da tipografia e do check in, é um tom alaranjado que é visível tanto para fundos de tela mais claros e escuros.
 
-   <div align="center">
+   <div>
         <img alt="logotipo-cardveric" height="100" src="/src/img/logo-pequeno.png">
-        <img alt="cor-logotipo-cardveric" height="100" src="/src/img/logo-color.png">
+        <img alt="cor-logotipo-cardveric" height="100" src="/src/img/color-logo.png">
   </div>
-    
 
-### 4.2 Aplicação
+### 4.2 Design Aplicado
 
-### 4.3 Protótipo Validado
+   - _**Estilo:**_ 
+   
+      - A aplicação utiliza um estilo _**flat design**_, reduzindo em formas planas, sem sombreamento, sem texturas e reflexos. Ele é focado mais nos conteúdos e uma navegação mais simples, exceto as logos dos emissores de cartão de crédito e débito que possuem outros estilos de design. A estrutura da aplicação escolhida, segue formas geométricas mais retas, sendo arredondados apenas nos vértices de botões e nos pop-ups.
 
-   - Depois de todas as ideias e dicas estabelecidas, para validar esse protótipo, foi desenvolvido um novo protótipo (alta fidelidade) usando uma ferramenta digital para protótipo. A ferramenta utilizada foi o Figma, que é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web.
-   - [Protótipo no Figma](https://www.figma.com/proto/FAdITvw78jNMkHuW1GwmJT/Card-Validation?node-id=78%3A223&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=78%3A223)
-
-   - _**Marca:**
-     
-      - 
-
-
-
-   - _**Estilo:**_    
-      design flat, exceto as logos dos emissores de cartão de crédito e débito.
+   - _**Tipografia:**_
+   
+      - A tipografia escolhida possui fonte sem serifa, com a font-family: Arial, Verdana, Helvetica e Sans-Serif. São letras fáceis de serem visualizadas e lidas em aplicações da web.
 
    - _**Cores:**_
    
+     - As cores escolhidas para o site foram pensadas em cores que transmitem seriedade e que pudessem serem contrastadas entre a cor do texto e o seu plano de fundo, para facilitar a leitura e legibilidade. Para isso foi utilizado a ferramenta da _[Adobe Color](https://color.adobe.com/pt/create/color-wheel)_ que testa, na parte de acessibilidade, as cores de textos com o seu plano de fundo. Foram testadas com: a cor de plano de fundo da aplicação em si, dos botões e pop-ups. 
      - Psicologia das cores
-     - Cores que possuem contraste adobe color
-   - _**Tipografia:**_
+
+
    - _**Hierarquia:**_
       - Espaçamento
     
 - _**Microinterações:**_
 
 
+### 4.3 Protótipo Validado
+
+   - Depois de todas as ideias e dicas estabelecidas, para validar esse protótipo, foi desenvolvido um novo protótipo (alta fidelidade) usando uma ferramenta digital para protótipo. A ferramenta utilizada foi o Figma, que é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web.
+   - [Protótipo no Figma](https://www.figma.com/proto/FAdITvw78jNMkHuW1GwmJT/Card-Validation?node-id=78%3A223&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=78%3A223)
 
 ## 5. Planejamento do Projeto
   
