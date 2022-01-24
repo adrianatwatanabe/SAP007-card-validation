@@ -1,5 +1,5 @@
 <div align="center">
-   <img alt="logo-CardVeric" src="/src/img/logo-pequeno.png">
+   <img alt="logo-CardVeric" src="/src/img/small-logo.png">
 
 ## CardVeric verifica se o cartão de crédito e débito são válidos.
   
@@ -16,24 +16,27 @@
 
 ## Índice
 
+- [CardVeric verifica se o cartão de crédito e débito são válidos.](#cardveric-verifica-se-o-cartão-de-crédito-e-débito-são-válidos)
+- [Índice](#índice)
 - [1. Introdução](#1-introdução)
 - [2. Funcionalidades](#2-funcionalidades)
-- [3. Experiênci do Usuário (UX)](#3-experiência-do-usuário-ux)
-   - [3.1 Personas ou Usuários](#31-personas-ou-usuários)
-   - [3.2 Wireframe](#32-wireframe)
-   - [3.3 Protótipo Simples com Feedbacks](#33-protótipo-simples-com-feedbacks)
+- [3. Experiência do Usuário (UX)](#3-experiência-do-usuário-ux)
+  - [3.1 Personas ou Usuários](#31-personas-ou-usuários)
+  - [3.2 Wireframe](#32-wireframe)
+  - [3.3 Protótipo Simples com Feedbacks](#33-protótipo-simples-com-feedbacks)
 - [4. Design de Interface (UI)](#4-design-de-interface-ui)
-   - [4.1 Marca CardVeric](#41-marca-cardveric)
-   - [4.2 Aplicacão](#42-aplicação)
-   - [4.3 Protótipo Validado](#43-protótipo-validado)
+  - [4.1 Marca CardVeric](#41-marca-cardveric)
+  - [4.2 Design Aplicado](#42-design-aplicado)
+  - [4.3 Protótipo Validado](#43-protótipo-validado)
 - [5. Planejamento do Projeto](#5-planejamento-do-projeto)
-   - [5.1 Scrum](#51-scrum)
-   - [5.2 Kanban](#52-kanban)
-- [6. Instruções de Uso](#6-instruções-de-uso)
-   - [6.1. Instalações](#61-instalações)
-   - [6.2. Como usar o CardVeric?](#62-como-usar-o-cardveric)
-- [7. Ferramentas Utilizadas](#7-ferramentas-utilizadas)
+  - [5.1 Scrum](#51-scrum)
+  - [5.2 Kanban](#52-kanban)
+- [6. Instruções de Uso:](#6-instruções-de-uso)
+  - [6.1 Instalações:](#61-instalações)
+  - [6.2 Como usar o CardVeric?](#62-como-usar-o-cardveric)
+- [7. Ferramentas Utilizadas:](#7-ferramentas-utilizadas)
 - [8. Autora](#8-autora)
+  - [Adriana Tiemi Watanabe](#adriana-tiemi-watanabe)
 
 ---
 
@@ -61,7 +64,7 @@ Essa validação do cartão de crédito é o primeiro passo para aceitar um paga
    - _**Telas, Mensagens e Botões**_
 
       - Pensando na facilidade de uso e no pouco tempo que os comerciantes tem para verificar os cartões, a aplicação funcionará apenas na _**Tela Inicial**_, onde possuirá um campo de entrada para inserir os números dos cartões. Após serem inseridos, basta apenas clicar no botão _**Verificar**_ e esperar uns milésimos de segundos para que a resposta apareça logo abaixo desse botão e a mensagem acima do campo de entrada mudará para _**Número do cartão**_. Também o botão _**Validar**_ mudará para _**Inserir outro número**_, não sendo necessário atualizar a página para limpar o campo de entrada.
-      - Caso queira limpar a tela, não mostrando nenhum número de cartão, é só clicar na [logo](/src/img/logo-pequeno.png) ou atualizar a página. 
+      - Caso queira limpar a tela, não mostrando nenhum número de cartão, é só clicar na [logo](/src/img/small-logo.png) ou atualizar a página. 
 
    - _**Arquitetura de Informação**_
 
@@ -72,7 +75,7 @@ Essa validação do cartão de crédito é o primeiro passo para aceitar um paga
    - Após o término do Wireframe, foi mostrado a solução para uma das alunas desse bootcamp, para que ela o avaliasse, dando feedbacks sobre ele que foram anotados no próprio papel do protótipo de baixa fidelidade.
 
      <div>
-        <img alt="Protótipo CardVeric de baixa fidelidade" height="300" src="/src/img/prototipo-card-validation.jpeg">
+        <img alt="Protótipo CardVeric de baixa fidelidade" height="300" src="/src/img/to-readme/simple-prototype.jpeg">
      </div>
 
 ## 4. Design de Interface (UI)
@@ -82,7 +85,7 @@ Essa validação do cartão de crédito é o primeiro passo para aceitar um paga
    - CardVeric é uma empresa fictícia de tecnologia iniciada no bootcamp da Laboratoria, especializada em validação de cartões de crédito e débito, transmitindo uma certeza e alegria quando o cartão é validado. Isso é representado em seu logotipo com o símbolo de check in com cores alegres, como: laranja, amarelo e rosa, mas também transmite a seriedade por meio da tipografia futurista aplicada com o nome da marca. A cor da tipografia e do check in, é um tom alaranjado que é visível tanto para fundos de tela mais claros e escuros.
 
      <div>
-          <img alt="logotipo-cardveric" height="100" src="/src/img/logo-pequeno.png"><img alt="cor-logotipo-cardveric" height="100" src="/src/img/color-logo.png">
+          <img alt="logotipo-cardveric" height="100" src="/src/img/small-logo.png"><img alt="cor-logotipo-cardveric" height="100" src="/src/img/logo-color.png">
      </div>
 
 ### 4.2 Design Aplicado
