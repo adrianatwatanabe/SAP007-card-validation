@@ -1,5 +1,5 @@
 <div align="center">
-   <img alt="logo-CardVeric" src="/src/img/to-readme/logo-color.png">
+   <img alt="logo-CardVeric" src="/src/img/small-logo.png">
 
 ## CardVeric verifica se o cartão de crédito e débito são válidos.
 
