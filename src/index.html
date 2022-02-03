@@ -9,24 +9,48 @@
 
 <body>
   <header>
-    <img alt="Logo da marca CardVeric" src="img/small-logo.png">
+    <img alt="Logo da marca CardVeric" src="img/small-logo.png" id="logo">
   </header>
   <main>
     <h1 id="title">VALIDAÇÃO DE CARTÃO DE<br>CRÉDITO E DÉBITO</h1>
     <form>
       <label for="cardNumber">Insira o número do cartão</label>
-      <input type="number" id="cardNumber" placeholder=" Digite 16 números" required>
-      <button type="submit">VALIDAR</button>
+      <input type="number" id="cardNumber" placeholder=" Digite os números " required>
+      <button type="submit" class="validation">VALIDAR</button>
     </form>
   </main>
   <address>
     <nav>
       <ul>
-        <li>Sobre</li>
-        <li>Contatos</li>
+        <li id="about"><a href="#" data-modal="openModalAbout">Sobre</a></li>
+        <li id="contacts"><a href="#" data-modal="openModalContacts">Contatos</a></li>
       </ul>
     </nav>
   </address>
+
+  <section class="containerModal" data-modal="containerModalAbout">
+    <div id="modalAbout" class="modal">
+      <button class="close" data-modal="closeModalAbout">X</button>
+      <img alt="Logo da marca CardVeric" src="img/small-logo.png" id="logo">
+      <h2>Informações sobre CardVeric</h2>
+      <p><strong>DiHex</strong> é uma empresa de tecnologia, especializada em validação de cartão de crédito e débito.</p>
+      <p>Esse site tem o objetivo de mostrar se o cartão de crédito e/ou débito é válido. Isso significa que apenas o número do cartão está entre aqueles que poderiam existir em uma determinada empresa de cartões de crédito.</p>
+      <p>Portanto, essa validação do cartão é o primeiro passo para aceitar um pagamento com cartão.</p>
+      <br>
+      <p><strong>Equipe HexDix</strong></p>
+    </div>
+  </section>
+
+  <section class="containerModal" data-modal="containerModalContacts">
+    <div id="modalContacts" class="modal">
+      <button class="close" data-modal="closeModalContacts">X</button>
+      <img alt="Logo da marca CardVeric" src="img/small-logo.png" id="logo">
+      <h2>Para mais informações sobre CardVeric:</h2>
+      <p><strong>E-mail:</strong> <a href="mailto:adriana.t.watanabe@gmail.com">adriana.t.watanabe@gmail.com</a></p>
+      <p><strong>WhatsApp:</strong><a href="https://web.whatsapp.com/"> +55 (11) 90000 - 0000</a></p>
+    </div>
+  </section>
+
   <script src="index.js" type="module"></script>
 </body>
 
