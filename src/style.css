@@ -129,9 +129,9 @@ input[type="number"] {
   height: auto;
   background: #cfcfcf;
   padding: 30px;
-  border: 5px solid #00455e;
+  border: 3px solid #00455e;
   box-shadow: 0 0 0 10px #cfcfcf;
-  border-radius: 10px;
+  border-radius: 5px;
   text-align: center;
   position: relative;
 }
@@ -149,8 +149,8 @@ input[type="number"] {
 .close {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  border: 3px solid #cfcfcf;
+  border-radius: 8px;
+  border: 3px solid #00455e;
   top: -30px;
   right: -30px;
   position: absolute;
