@@ -10,26 +10,28 @@ const validator = {
       return false;
     }
 
-    var cleanNumber = creditCardNumber.replace(/[^0-9]/g, "");
-    //console.log(typeof cleanNumber);
-    //console.log(cleanNumber);
-    console.log(cleanNumber.reverse());
-    let cardNumberLenght = cardNumberReverse.length;
+    let cleanNumber = creditCardNumber.replace(/[^0-9]/g, "");
+    let cardNumber = cleanNumber.split("");
+    cardNumber.reverse();
+    let cardNumberLenght = cardNumber.length;
 
     // DOUBLING THE EVEN NUMBERS
     var evenArray = [];
     var oddArray = [];
     for (let number = 0; number >= cardNumberLenght; number++) {
-      if (cardNumberReverse[number] % 2 == 0) {
-        let evenNumber = cardNumberReverse * 2;
+      //ERRADO
+      if (cardNumber[number] % 2 == 0) {
+        let evenNumber = cardNumber * 2;
         if (evenNumber % 9 == 1) {
           let number1 = parseInt(evenNumber[0]);
           let number2 = parseInt(evenNumber[2]);
           let sum = number1 + number2;
           evenArray.shift(sum);
         }
+        console.log("par");
       } else {
         oddArray.shift(sum);
+        console.log("");
       }
     }
 
