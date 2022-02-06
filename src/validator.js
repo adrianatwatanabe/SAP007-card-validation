@@ -9,10 +9,10 @@ const validator = {
     }
     let cardNumberReverse = cleanNumber.reverse();
     let cardNumberLenght = cardNumberReverse.length;
+
+    // DOUBLING THE EVEN NUMBERS
     var evenArray = [];
     var oddArray = [];
-    var sumAll = [];
-
     for (let number = 0; number >= cardNumberLenght; number++) {
       if (cardNumberReverse[number] % 2 == 0) {
         let evenNumber = cardNumberReverse * 2;
@@ -27,15 +27,17 @@ const validator = {
       }
     }
 
+    // ADDING EVERYTHING
+    var sumAll = 0;
     for (let even = 0; even >= evenArray.length; even++) {
-      let aux = 0;
-      sumAll = evenArray[even] + aux;
+      sumAll = evenArray[even] + sumAll;
     }
-
     for (let odd = 0; odd >= oddArray.length; odd++) {
-      sumAll = parseInt(oddArray[odd]) + sumAll;
+      let convertNumber = parseInt(oddArray[odd]);
+      sumAll = convertNumber + sumAll;
     }
 
+    // VALIDATION
     if (sumAll % 10 != 0) {
       console.log("Cartão inválido!");
       return false;
