@@ -1,432 +1,233 @@
-# Cartão de Crédito Válido
+<div align="center">
+   <img alt="logo-CardVeric" src="/src/img/logo.png">
+
+## CardVeric verifica se o cartão de crédito e débito são válidos.
+
+**Status do Projeto:** _Em andamento_
+
+<div style="display: inline_block">
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"> <img alt="HTML" height="35" width="35" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"></a>
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSSL" target="_blank"><img alt="CSS" height="35" width="35" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"></a>
+  <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><img alt="JavaScript" height="35" width="35" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"></a>
+</div>
+</div>
+
+---
 
 ## Índice
 
-- [1. Introdução](#1-Introdução)
-- [2. Resumo do projeto](#2-resumo-do-projeto)
-- [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-- [4. Considerações gerais](#4-consideracoes-gerais)
-- [5. Critérios de aceitação mínimos do projeto](#5-critérios-de-aceitação-mínimos-do-projeto)
-- [6. Hacker edition](#6-hacker-edition)
-- [7. Considerações técnicas](#7-considerações-técnicas)
-- [8. Guias, dicas e leituras complementares](#8-guias-dicas-e-leituras-complementares)
-- [9. Checklist](#9-checklist)
+- [CardVeric verifica se o cartão de crédito e débito são válidos.](#cardveric-verifica-se-o-cartão-de-crédito-e-débito-são-válidos)
+- [Índice](#índice)
+- [1. Introdução](#1-introdução)
+- [2. Funcionalidades](#2-funcionalidades)
+- [3. Experiência do Usuário (UX)](#3-experiência-do-usuário-ux)
+  - [3.1 Personas ou Usuários](#31-personas-ou-usuários)
+  - [3.2 Wireframe](#32-wireframe)
+  - [3.3 Protótipo Simples com Feedbacks](#33-protótipo-simples-com-feedbacks)
+- [4. Design de Interface (UI)](#4-design-de-interface-ui)
+  - [4.1 Marca CardVeric](#41-marca-cardveric)
+  - [4.2 Design Aplicado](#42-design-aplicado)
+  - [4.3 Protótipo Validado](#43-protótipo-validado)
+- [5. Planejamento do Projeto](#5-planejamento-do-projeto)
+  - [5.1 Scrum](#51-scrum)
+  - [5.2 Kanban](#52-kanban)
+- [6. Instruções de Uso:](#6-instruções-de-uso)
+  - [6.1 Instalações:](#61-instalações)
+  - [6.2 Como usar o CardVeric?](#62-como-usar-o-cardveric)
+- [7. Ferramentas Utilizadas:](#7-ferramentas-utilizadas)
+- [8. Checklist](#8-checklist)
+  - [8.1 Parte Obrigatória](#81-parte-obrigatória)
+  - [8.2 Parte Opcional: "Hacker edition"](#82-parte-opcional-hacker-edition)
+- [9. Autora](#9-autora)
+  - [Adriana Tiemi Watanabe](#adriana-tiemi-watanabe)
 
 ---
 
 ## 1. Introdução
 
-O [algoritmo de Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm), também
-chamado de módulo 10, é um método de soma de verificação, usado para validar
-números de identificação, como o IMEI de telefones celulares, cartões de crédito
-etc.
+A aplicação CardVeric é uma aplicação que verifica se os cartões de crédito e débito são válidos, após inserir no campo de entrada o seu número e constatar se o mesmo possui resultado válido ou não, além de impedir que seja enviado o campo vazio. Ele também deve ocultar visualmente todos os dígitos do número do cartão, exceto os últimos 4 caracteres e identificar o emissor do cartão.
 
-Esse algoritmo é simples. Obtemos o inverso do número a ser verificado (que
-contém apenas dígitos [0-9]); todos os números que ocupam uma posição par devem
-ser multiplicados por dois; se esse número for maior ou igual a 10, devemos
-adicionar os dígitos do resultado; o número a verificar será válido se a soma de
-seus dígitos finais for um múltiplo de 10.
+## 2. Funcionalidades
 
-![gráfico do algoritmo de
-Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+A validação de um cartão de crédito refere-se ao processo de execução do [algoritmo de Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm) que executa cálculos utilizando o número do cartão. Quando o algoritmo mostra que o cartão é válido, significa que apenas o número do cartão está entre aqueles que poderiam existir em uma determinada empresa de cartões de crédito.
 
-## 2. Resumo do projeto
+Essa validação do cartão de crédito é o primeiro passo para aceitar um pagamento com cartão. Após uma validação bem sucedida, o comerciante irá introduzir o número do cartão em um programa de software comercial ou uma máquina de cartão de crédito, que envia o número da conta para o emissor do cartão para realizar a autorização e confirmar o pagamento.
 
-Neste projeto, você precisará criar um aplicativo da Web que permita ao usuário
-validar o número de um cartão de crédito. Além disso, você precisará
-implementar a funcionalidade para ocultar todos os dígitos de um cartão, exceto
-os quatro últimos.
+## 3. Experiência do Usuário (UX)
 
-O tema é livre. Você deve pensar em quais situações da vida real um cartão de
-crédito precisaria ser validado e em como deveria ser a experiência do usuário
-(telas, explicações, mensagens, cores, marca?) etc.
+### 3.1 Personas ou Usuários
 
-Você aprenderá a criar um aplicativo Web que irá interagir interagir com uma
-pessoa ao final do desenvolvimento através do navegador, usando HTML, CSS e
-JavaScript como tecnologias.
+- As personas do CardVeric são os comerciantes em geral, mas principalmente os que suspeitam de fraude, por necessitarem de ajuda para validar os cartões de crédito e débito de seus clientes, identificando as informações de pagamento fraudulento mais rapidamente e evitando as perdas de tempo e dinheiro associados, por meio da identificação dos números de cartões de crédito e débito falsos antes de solicitar uma autorização da empresa do cartão, para o pagamento dos produtos e serviços prestados por eles.
+- Provavelmente a procura por verificação de cartão de crédito e débito tem aumentado, pois com o aumento crescente das vendas online causado devido a pandemia de Covid-19, as vendas on-line ganharam [13 milhões de novos consumidores no Brasil em 2020](https://g1.globo.com/economia/tecnologia/noticia/2021/03/29/faturamento-de-lojas-on-line-cresce-41percent-em-2020-maior-alta-em-13-anos.ghtml), segundo levantamento da Ebit/Nielsen. Além de 83% dos novos compradores afirmarem que repetiriam a compra pela internet. E com a ajuda das redes sociais, como Instagram, Facebook, WhatshApp e TikTok, isso facilitou registrando um aumento de [185% entre 2019 e 2020 nos negócios](https://mercadoeconsumo.com.br/2021/02/23/vendas-no-e-commerce-pelas-redes-sociais-saltam-de-22-para-34-em-2020/), representando um terço dessas vendas, de acordo com a Nuvemshop. Então boa parte das empresas precisou se digitalizar, provocando um salto expressivo no mercado digital.
 
-## 3. Objetivos de aprendizagem
+### 3.2 Wireframe
 
-Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projeto. Pense nisso para decidir sua estratégia de trabalho.
+- Para realizar o projeto do bootcamp Laboratoria, foi realizado primeiro um protótipo simples (baixa fidelidade) usando papel e lápis. A sua criação foi dividido em: _**telas, explicações e mensagens, arquitetura de informação.**_
 
-### HTML
+- _**Telas, Mensagens e Botões**_
 
-- [ ] **Uso de HTML semântico**
+  - Pensando na facilidade de uso e no pouco tempo que os comerciantes tem para verificar os cartões, a aplicação funcionará apenas na _**Tela Inicial**_, onde possuirá um campo de entrada para inserir os números dos cartões. Após serem inseridos, basta apenas clicar no botão _**Verificar**_ e esperar uns milésimos de segundos para que a resposta apareça logo abaixo desse botão e a mensagem acima do campo de entrada mudará para _**Número do cartão**_. Também o botão _**Validar**_ mudará para _**Inserir outro número**_, não sendo necessário atualizar a página para limpar o campo de entrada.
+  - Caso queira limpar a tela, não mostrando nenhum número de cartão, é só clicar na [logo](/src/img/logo-color.png) ou atualizar a página.
 
-    <details><summary>Links</summary><p>
+- _**Arquitetura de Informação**_
 
-  - [HTML semántico](https://curriculum.laboratoria.la/pt/topics/html/02-html5/02-semantic-html)
-  - [Semantics in HTML - MDN](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-  </p></details>
+  - O mapa dessa aplicação acontecerá em apenas uma página ou nível, por se tratar de uma aplicação simples, onde todas as principais mudanças de informações não acontecerão em outras páginas e sim na mesma página, como as respostas das validações acontecem abaixo do botão Validar e ao limpar o campo de entrada. Além de informações de outras páginas ocorrerem na própria tela inicial, como a página _**Sobre**_ e _**Contatos**_ que usaram [pop-ups](https://tecnoblog.net/responde/o-que-e-pop-up/) e após fechá-las no X, a tela inicial ficará visível, sem a necessidade de carregá-la novamente.
 
-### CSS
+### 3.3 Protótipo Simples com Feedbacks
 
-- [ ] **Uso de seletores de CSS**
+- Após o término do Wireframe, foi mostrado a solução para uma das alunas desse bootcamp, para que ela o avaliasse, dando feedbacks sobre ele que foram anotados no próprio papel do protótipo de baixa fidelidade.
 
-    <details><summary>Links</summary><p>
+  <div>
+     <img alt="Protótipo CardVeric de baixa fidelidade" height="300" src="/src/img/to-readme/simple-prototype.jpeg">
+  </div>
 
-  - [Intro a CSS](https://curriculum.laboratoria.la/pt/topics/css/01-css/01-intro-css)
-  - [CSS Selectors - MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
-  </p></details>
+## 4. Design de Interface (UI)
 
-- [ ] **Empregar o modelo de caixa (box model): borda, margem, preenchimento**
+### 4.1 Marca CardVeric
 
-    <details><summary>Links</summary><p>
+- CardVeric é uma empresa fictícia de tecnologia iniciada no bootcamp da Laboratoria, especializada em validação de cartões de crédito e débito, transmitindo uma certeza e alegria quando o cartão é validado. Isso é representado em seu logotipo com o símbolo de check in com cores alegres, como: laranja, amarelo e rosa, mas também transmite a seriedade por meio da tipografia futurista aplicada com o nome da marca. A cor da tipografia e do check in, é um tom alaranjado que é visível tanto para fundos de tela mais claros e escuros.
 
-  - [Modelo de Caixa e Display](https://curriculum.laboratoria.la/pt/topics/css/01-css/02-boxmodel-and-display)
-  - [The box model - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
-  - [Introduction to the CSS box model - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
-  - [CSS display - MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/display)
-  - [display - CSS Tricks](https://css-tricks.com/almanac/properties/d/display/)
-  </p></details>
+  <div>
+       <img alt="logotipo-cardveric" height="100" src="/src/img/logo.png"><img alt="cor-logotipo-cardveric" height="100" src="/src/img/to-readme/logo-color.png">
+  </div>
 
-### Web APIs
+### 4.2 Design Aplicado
 
-- [ ] **Uso de seletores de DOM**
+- _**Estilo**_
 
-    <details><summary>Links</summary><p>
+  - A aplicação utiliza um estilo _**[flat design](https://www.chiefofdesign.com.br/ui-design/)**_, reduzindo em formas planas, sem sombreamento, sem texturas e reflexos. Ele é focado mais nos conteúdos e uma navegação mais simples, exceto os logos dos emissores de cartão de crédito e débito que possuem outros estilos de design. A estrutura da aplicação escolhida, segue formas geométricas mais retas, sendo arredondados apenas nos vértices de botões e nos pop-ups.
 
-  - [Modificando o DOM](https://curriculum.laboratoria.la/pt/topics/browser/02-dom/03-1-dom-methods-selection)
-  - [Introdução ao DOM - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction)
-  - [Locating DOM elements using selectors - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
-  </p></details>
+- _**Tipografia e Hierarquia**_
 
-- [ ] **Gerenciamento de eventos de DOM**
+  - A [tipografia](https://www.chiefofdesign.com.br/tipografia/) escolhida possui fonte sem serifa, com a font-family: Arial, Verdana, Helvetica e Sans-Serif. São letras fáceis de serem visualizadas e lidas em aplicações da web.
+  - Para o título "Validação de Cartão de Crédito e Débito" da página ser destacado, será utilizado em [caixa alta com alinhamento centralizado](https://www.chiefofdesign.com.br/tipografia-02/). Já para os seguintes textos: "Insira o número do cartão" e "Número do cartão", serão em caixa baixa, mas somente a primeira letra em caixa alta, igualmente para as palavras "Sobre" e "Contatos".
+  - O tamanho dessas duas frases deverão ser pequenas em relação ao título da página e a tipografia encontrada nos botões serão do mesmo tamanho que elas, mas em caixa alta. Para as palavras "Sobre"e "Contatos", deverão ser em tamanhos menores que essas frases.
 
-    <details><summary>Links</summary><p>
+- _**Cores**_
 
-  - [Introdução a eventos - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Events)
-  - [EventTarget.addEventListener() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener)
-  - [EventTarget.removeEventListener() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/removeEventListener)
-  - [El objeto Event](https://developer.mozilla.org/pt-BR/docs/Web/API/Event)
-  </p></details>
+  - As cores escolhidas para o site foram pensadas em cores que transmitem seriedade e que pudessem ser contrastadas entre a cor do texto e o seu plano de fundo, para facilitar a leitura e legibilidade. Para isso foi utilizado a ferramenta da _[Adobe Color](https://color.adobe.com/pt/create/color-wheel)_ que testa, na parte de acessibilidade, as cores de textos com o seu plano de fundo. Foram testadas com: a cor de plano de fundo da aplicação em si, dos botões e pop-ups.
+  - Para transmitir seriedade e o contraste necessário, foi usado a [Psicologia das Cores](https://www.chiefofdesign.com.br/psicologia-das-cores/#:~:text=J%C3%A1%20foi%20falado%20aqui%20no,imprecisas%20quando%20desconhecemos%20o%20contexto.):
 
-- [ ] **Manipulação dinâmica de DOM**
+    - _**Azul:**_ presente na maior parte da aplicação, essa cor é usada quando necessita-se transmitir confiança e segurança como prioridade.
+    - _**Amarelo:**_ essa cor foi usada para chamar a atenção e transmitir um pouco de alegria, quebrando um pouco a seriedade da aplicação.
+    - _**Laranja:**_ usada quando a intenção é transmitir vibração, entusiasmo e humor. Essas qualidades são características de quem é amigável. Laranja foi usado para o título da página por ser uma cor complementar ao azul e por dar contraste para a página no geral.
+    - _**Preto, Cinza e Branco:**_ são cores consideradas neutras, podendo ser utilizadas em textos para que haja contraste com o plano de fundo ou ao contrário.
 
-    <details><summary>Links</summary><p>
+      <div>
+        <img alt="logotipo-cardveric" height="100" src="/src/img/to-readme/site-color.png">
+      </div>
 
-  - [Introdução ao DOM](https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM/Introdu%C3%A7%C3%A3o)
-  - [Node.appendChild() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Node/appendChild)
-  - [Document.createElement() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createElement)
-  - [Document.createTextNode()](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createTextNode)
-  - [Element.innerHTML - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Element/innerHTML)
-  - [Node.textContent - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Node/textContent)
-  </p></details>
+- _**Transições e Microinterações**_
 
-### JavaScript
+  - As transições e efeitos na páginas serão o mais simples possível e rápidas de serem concluídas, para facilitar o seu uso e não fazer com que os comerciantes percam tempo usando a aplicação, podendo deixarem de usá-la.
 
-- [ ] **Tipos de dados primitivos**
+### 4.3 Protótipo Validado
 
-    <details><summary>Links</summary><p>
+- Depois de todas as ideias e dicas estabelecidas, para validar esse protótipo, foi desenvolvido um novo protótipo (alta fidelidade) usando uma ferramenta digital para protótipo. A ferramenta utilizada foi o Figma, que é um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web.
+- [Protótipo no Figma](https://www.figma.com/proto/FAdITvw78jNMkHuW1GwmJT/Card-Validation?node-id=78%3A223&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=78%3A223)
 
-  - [Valores Primitivos - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Data_structures#valores_primitivos)
-  </p></details>
+## 5. Planejamento do Projeto
 
-- [ ] **Strings (cadenas de caracteres)**
+- _CardVeric_ é um projeto desenvolvido em 2022, para o bootcamp da [Laboratoria Brasil](https://hub.laboratoria.la/br).
+- Esse projeto é baseado nas instruções apresentadas pelo _README_ do [CardValidation](https://github.com/Laboratoria/SAP007-card-validation.git).
 
-    <details><summary>Links</summary><p>
+### 5.1 Scrum
 
-  - [Strings](https://curriculum.laboratoria.la/pt/topics/javascript/06-strings)
-  - [String - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String)
-  </p></details>
+1. Para realizar o planejamento foi utilizado o _**Scrum**_, que é uma [metodologia ágil](https://agilemanifesto.org/principles.html) para gestão e planejamento de projetos de software, onde os projetos são divididos em ciclos, chamados de Sprints.
+2. O _**Sprint**_ representa um conjunto de atividades que devem ser executadas. As funcionalidades a serem implementadas em um projeto são mantidas em uma lista que é conhecida como _**Product Backlog**_.
+3. A cada dia de uma Sprint, há uma breve reunião chamada _**Daily Scrum Meeting**_. O objetivo é disseminar conhecimento sobre o que foi feito no dia anterior, identificar impedimentos e priorizar o trabalho do dia que se inicia, priorizando os itens do _**Product Backlog**_.
+4. Ao final de um Sprint, é apresentado as funcionalidades implementadas em uma _**Sprint Review**_. Finalmente, faz-se uma _**Sprint Retrospective**_ e parte para o planejamento do próximo Sprint. Assim reinicia-se o ciclo.
 
-- [ ] **Variáveis (declaração, atribuição, escopo)**
+- Os Sprints da Laboratoria possuem duração de uma semana e são iniciadas todas as sextas-feiras. A Daily é realizada por meio de uma planilha e o Sprint Review é feito todas as quintas-feiras.
 
-    <details><summary>Links</summary><p>
+### 5.2 Kanban
 
-  - [Valores, tipos de dados e operadores](https://curriculum.laboratoria.la/pt/topics/javascript/01-basics/01-values-variables-and-types)
-  - [Variáveis](https://curriculum.laboratoria.la/pt/topics/javascript/01-basics/02-variables)
-  </p></details>
+- Para facilitar a organização sobre: _**O QUE FAZER, O QUE ESTOU FAZENDO e O QUE FOI FEITO**_, foi utilizado a metodologia _**Kanban**_.
+- O objetivo é supervisionar, gerenciar e controlar o fluxo de tarefas que são feitas em cada etapa da produção.
+- Ele é dividido em 3 principais colunas: _**To Do, Doing e Done**_, e, os cartões são movidos de coluna para coluna conforme o seu status é mudado.
+- A ferramenta utilizada para a organização foi o [Trello](https://trello.com/pt-BR) e ela foi dividida em cinco colunas: _**Files, To Do Backlog, To Do, Ongoing e Done.**_
 
-- [ ] **Uso de condicionais (if-else, switch, operador ternário)**
+  - _**Files**_: são os arquivos que devem ser entregados ao final do projeto. Servindo mais como um lembrete com checklist especificados no _README_ do [CardValidation](https://github.com/Laboratoria/SAP007-card-validation.git). Eles possuem a etiqueta azul com nome de Files.
+  - _**To Do Backlog**_: são os microprojetos a serem feitos por etapas e sequências, ordenado em ordem crescente. Ao final do Scrum, o projeto estará funcionando, mesmo não estando completo com todos os requisitos apresentados no README do CardValidation. Eles possuem a etiqueta rosa com o nome Backlog, mas também poderão ter outras etiquetas com nível de prioridade para fazer o Ongoing.
+  - _**To Do**_: como o projeto é de um bootcamp, nesta coluna estão todos os tópicos a serem estudados, de acordo com o que é necessário para o Backlog. Eles são separados por nível de prioridade de 1 a 6, onde cada cor recebe uma cor.
+  - _**Ongoing**_: os cartões do To Do Backlog e To Do são movidos para ele, obedecendo o nível de prioridade conforme o que é necessário estudar para realizar os baby steps (microprojetos).
+  - _**Done**_: nada mais é que os cartões concluídos no Ongoing.
 
-    <details><summary>Links</summary><p>
+  - ### [KANBAN DO CARDVERIC](https://trello.com/b/e9L8eGe5/lab-primeiro-proj)
 
-  - [Estruturas condicionais e repetitivas](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/01-conditionals-and-loops)
-  - [Tomando decisões no seu código — condicionais - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/conditionals)
-  </p></details>
+## 6. Instruções de Uso:
 
-- [ ] **Uso de laços (for, for..of, while)**
+### 6.1 Instalações:
 
-    <details><summary>Links</summary><p>
+1.  Após fazer o seu próprio _[FORK](https://docs.github.com/en/get-started/quickstart/fork-a-repo)_ do repositório CardVeric, _[CLONE](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)_ o fork para o seu computador (cópia local).
+2.  Instale o software [Node.js](https://nodejs.org/en/).
+3.  Após a instalação, abra o [terminal](https://www.programaria.org/o-que-e-o-terminal-ou-venha-conhecer-tela-preta/) de seu computador e digite os seguintes comandos para verificar as versões do Node.js e [npm](https://docs.npmjs.com/) instaladas. Digite uma linha por vez:
 
-  - [Laços (Loops)](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/02-loops)
-  - [Laços e iterações - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration)
-  </p></details>
+    ```
+    $ node -v
+    $ npm -v
+    ```
 
-- [ ] **Uso de funções (parâmetros, argumentos, valor de retorno)**
+4.  Localize o diretório do projeto CardVeric em seu computador por meio do temminal, utilizando o comando cd (Change Directory).
+5.  Instale as dependências do projeto executando o seguinte comando:
 
-    <details><summary>Links</summary><p>
+    ```
+    $ npm install
+    ```
 
-  - [Funções (controle de fluxo)](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/03-functions)
-  - [Funções clásicas](https://curriculum.laboratoria.la/pt/topics/javascript/03-functions/01-classic)
-  - [Arrow Functions](https://curriculum.laboratoria.la/pt/topics/javascript/03-functions/02-arrow)
-  - [Funções — blocos reutilizáveis de código - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Functions)
-  </p></details>
+6.  Se tudo foi bem, você deve conseguir executar os comandos dos testes unitários pelo terminal com o comando:
 
-- [ ] **Testes unitários**
+    ```
+    $ npm test
+    ```
 
-    <details><summary>Links</summary><p>
+7.  Após os testes ocorrerem tudo bem, inicie o npm no terminal para ver a interface do seu programa no navegador:
 
-  - [Introdução ao Jest - Documentação oficial](https://jestjs.io/docs/pt-BR/getting-started)
-  </p></details>
+    ```
+    $ npm start
+    ```
 
-- [ ] **Uso ES modules**
-
-    <details><summary>Links</summary><p>
-
-  - [import - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/import)
-  - [export - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/export)
-  </p></details>
-
-- [ ] **Uso de linter (ESLINT)**
-
-- [ ] **Uso de identificadores descritivos (Nomenclatura | Semântica)**
-
-### Git e GitHub
-
-- [ ] **Git: Instalação e configuração**
-
-- [ ] **Git: Controle de versão com git (init, clone, add, commit, status, push, pull, remote)**
-
-- [ ] **GitHub: Criação de contas e repositórios, configuração de chave SSH**
-
-- [ ] **GitHub: Implantação com GitHub Pages**
-
-    <details><summary>Links</summary><p>
-
-  - [Site oficial do GitHub Pages](https://pages.github.com/)
-  </p></details>
-
-### UX (User eXperience)
-
-- [ ] **Desenhar a aplicação pensando e entendendo o usuário**
-
-- [ ] **Criar protótipos para obter feedback e iterar**
-
-- [ ] **Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)**
-
-## 4. Considerações gerais
-
-- A equipe de mentores te dará um tempo sugerido e indicações sobre trabalhar
-  individualmente ou em equipe. Lembre-se de que cada pessoa aprende em um ritmo
-  diferente.
-
-- O projeto será entregue subindo seu código no GitHub (commit/push) e a
-  interface será implementada usando as páginas do GitHub. Caso desconheça o
-  GitHub, não se preocupe, pois você vai aprender sobre ele ao longo do projeto.
-
-## 5. Critérios de aceitação mínimos do projeto
-
-Use apenas caracteres numéricos (dígitos) no cartão para validar [0-9].
-
-### Definição do produto
-
-No `README.md`, conte-nos como você pensou sobre os usuários e qual foi seu
-processo para definir o produto final a nível da experiência e da interface.
-
-- Quem são os principais usuários do produto.
-- Quais os objetivos destes usuários em relação a seu produto.
-- Como você considera que o produto que está criando resolverá os problemas dos
-  usuários.
-
-### Interface do usuário (UI)
-
-A interface deve permitir ao usuário:
-
-- Inserir o número que desejamos validar.
-- Constatar se o resultado é válido ou não.
-- Ocultar todos os dígitos do número do cartão, exceto os últimos 4
-  caracteres.
-- Não deve poder inserir um campo vazio.
-
-### UX (Design da experiência do usuário)
-
-Antes de começar a codificar, você deve entender o problema que deseja resolver
-e como o aplicativo o resolve.
-
-- Trabalhe seu primeiro protótipo com papel e lápis (preto e branco).
-- Em seguida, valide esta solução com uma companheira (peça feedback).
-- Use o aprendizado no momento de validar seu primeiro protótipo e desenvolva um
-  novo protótipo empregando alguma ferramenta para design de protótipos
-  ([Balsamiq](https://balsamiq.com/), [Figma](https://www.figma.com/),
-  [Apresentações Google](https://www.google.com/intl/pt-br/slides/about/) etc.)
-  Esses pontos serão apresentados no `README.md`.
-
-### Scripts / Arquivos
-
-- `REAME.md`: deve explicar como "deployar", instalar e executar a aplicação,
-  assim como uma introdução a aplicação, suas funcionalidades e as decisões que
-  foram tomadas.
-- `src/index.html`: aqui será o ponto de entrada da sua aplicação. Este arquivo
-  deve conter a marcação HTML e chamar o CSS e JavaScript necessários.
-- `src/style.css`: este arquivo deve conter as regras de estilo. Queremos que
-  você escreva suas próprias regras. Por isso, NÃO é permitido o uso de frameworks
-  de CSS (Bootstrap, materialize etc).
-- `src/validator.js`: aqui você deve implementar o objeto `validador`, o qual já
-  está _exportado_ no _boilerplate_. Este objeto (`validador`) deve conter dois métodos:
-  - **`validator.isValid(creditCardNumber)`**: `creditCardNumber` é um `string`
-    com o número do cartão a ser verificado. Esta função deve retornar um
-    `boolean`, dependendo de sua validade, de acordo com o [algoritmo de
-    Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm).
-  - **`validator.maskify(creditCardNumber)`**: `creditCardNumber` é um `string`
-    com o número do cartão e esta função deve retornar um `string` onde todos,
-    exceto os últimos quatro caracteres, são substituídos por um número (`#`) ou
-    🐱. Essa função deve sempre manter os quatro últimos caracteres intactos,
-    mesmo quando a `string` for mais curta.
-- `src/index.js`: aqui, você escreverá todo o código relacionado à interação do DOM
-  (selecionar, atualizar e manipular elementos do DOM e eventos). Nesse arquivo,
-  você precisará chamar as funções `validator.isValid` e `validator.maskify` conforme
-  seja necessário para atualizar o resultado na tela (UI).
-- `test/validator.spec.js`: este arquivo contem alguns testes de exemplo e aqui
-  você deve implementar os testes para `validator.isValid()` e `validator.maskify()`.
+8.  O comando `npm star` exibirá uma _**url**_ com a palavra _**localhost**_. Copie essa url, cole-a na [barra de endereço](https://pt.wikipedia.org/wiki/Barra_de_endere%C3%A7o) do seu navegador e aperte a tecla [Enter](<https://pt.wikipedia.org/wiki/Enter_(tecla)>).
+9.  Pronto! Agora o site CardVeric aparecerá em seu navegador.
 
 ---
 
-## 6. Hacker Edition
+### 6.2 Como usar o CardVeric?
 
-As seções chamadas _Hacker Edition_ são **opcionais**. Se você **terminou** tudo
-e ainda sobrou tempo, faça essa parte. Assim você poderá aprofundar e exercitar
-mais sobre os objetivos de aprendizagem do projeto.
+1.  Ao carregar a página da aplicação `CardVeric` , insira os `números de 0 a 9` , do cartão de `débito ou crédito` no campo de entrada.
+2.  Após digitar o número, clique no botão `Validar` e espere um alguns milésimos de segundos.
+3.  Pronto! A resposta se o cartão é válido ou não, surgirá abaixo do botão Validar.
+4.  Para inserir outro número de cartão de débito ou crédito, clique no campo de entrada e digite os números.
+5.  Logo em seguida, clique em Validar e a resposta aparecerá abaixo do botão.
+6.  Para voltar a página sem os números do cartão, clique no logo do [CardVeric](/src/img/logo-color.png).
+7.  Para mais informações sobre o produto, clique em `Sobre`.
+8.  Em caso de problemas com a aplicação ou deseje tirar dúvidas sobre ela, clique em `Contatos`.
 
-Uma sugestão de funcionalidade Hacker Edition é identificar e mostrar ao usuário
-o [instituição emissora](https://economiaenegocios.com/de-onde-vem-o-numero-do-seu-cartao-de-credito/)
-do cartão de crédito (exemplo: Visa, MasterCard, etc). Você pode usar estas
-[regras de validação](https://stevemorse.org/ssn/cc.html).
+    <div>
+        <img alt="" height="300" src="/src/img/to-readme/prototype.gif">
+    </div>
 
-## 7. Considerações técnicas
+## 7. Ferramentas Utilizadas:
 
-A lógica do projeto deve estar implementada inteiramente em JavaScript. Nesse
-projeto **NÃO** está permitido usar bibliotecas ou frameworks, só vanilla
-JavaScript.
+- **Planejamento:**
 
-Os testes unitários devem cobrir no mínimo de 70% dos _statements_, _functions_
-e _lines_, e um mínimo de 50% de _branches_. O _boilerplate_ já contem o setup e
-configurações necessárias para executar os testes assim como _code coverage_
-para ver o nível de cobertura dos testes usando o comando `npm test`.
+  - **Scrum:** _[Trello](https://trello.com)_
 
-O _boilerplate_ inclui testes de exemplo, como ponto de partida.
+- **UX/UI**:
 
-Para começar esse projeto você terá que fazer um _fork_ e _clonar_ este
-repositório que contém o _boilerplate_.
+  - **Edição de Imagens:** _[Canvas](https://www.canva.com/pt_br/)_
+  - **Paleta de Cores com Acessibilidade:** _[Adobe Color](https://color.adobe.com/pt/create/color-wheel)_
+  - **Protótipo:** _[Figma](https://www.figma.com/)_
+  - **Transforma Vídeo em Gif:** _[Convertio](https://convertio.co/pt/mp4-gif/)_
 
-O _boilerplate_ contém uma estrutura de arquivos como ponto de partida assim
-como toda a configuração de dependências e testes de exemplo:
+- **Web:**
+  - **Editor:** _[Visual Studio Code](https://code.visualstudio.com/)_
 
-```text
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── index.html
-│   ├── index.js
-│   ├── style.css
-│   └── validator.js
-└── test
-    ├── .eslintrc
-    └── validator.spec.js
-```
-
-O _boilerplate_ inclui tarefas que executam [eslint](https://eslint.org/) e
-[htmlhint](https://github.com/yaniswang/HTMLHint) para verificar o `HTML` e
-`JavaScript` com respeito a uma guia de estilos. Ambas tarefas são executadas
-automaticamente antes de executar os testes quando usamos o comando `npm run test`.
-
-No caso do `JavaScript` estamos usando o `eslint` que está configurado no
-arquivo `.eslintrc` que contem o mínimo de informação como versão do
-JavaScript/ECMAScript, o ambiente (_browser_ nesse caso) e as [regras
-recomendadas (`"eslint:recommended"`)](https://eslint.org/docs/rules/).
-
-Nas regras/guias de estilo usaremos das recomendações padrão tanto para o
-`eslint` quanto `htmlhint`.
-
----
-
-## 8. Guias, dicas e leituras complementares
-
-### Primeiros passos
-
-1. Antes de mais nada, se assegure de ter um bom 📝 editor de texto, algo
-   como [Code](https://code.visualstudio.com/) ou [Atom](https://atom.io/).
-2. Para executar os comandos você precisará de um 🐚 UNIX Shell, que é um
-   programa que interpreta linhas de comando (command-line interpreter) e também
-   deve ter o git instalado. Se você usa um sistema operacional "UNIX-like",
-   como GNU/Linux ou MacOS, você já tem um _shell_ (terminal) instalado (e
-   provavelmente o `git` também). Se você usa o Windows, pode utilizar a
-   versão completa do [Cmder](https://cmder.net/) que já inclui o Git bash.
-   Se tiver o Windows 10 ou superior,
-   pode usar o [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
-3. Faça seu próprio🍴
-   [fork](https://help.github.com/articles/fork-a-repo/) do repositório.
-4. ⬇️ [Clone](https://help.github.com/articles/cloning-a-repository/)
-   o \_fork* para seu computador (cópia local).
-5. 📦 Instale as dependências do projeto rodando o comando `npm install`. Mas
-   antes disso tenha certeza de ter instalado o [Node.js](https://nodejs.org/)
-   (que inclui o [npm](https://docs.npmjs.com/)).
-6. Se tudo foi bem, você deve conseguir executar os 🚥 testes
-   unitários com o comando `npm test`.
-7. Para ver a interface do seu programa no navegador, use o comando `npm start`
-   para iniciar o servidor web e entre na url `http://localhost:5000` no seu
-   navegador.
-8. Let's Code! 🚀
-
-Este [video](https://drive.google.com/file/d/1CM6ZfpGfJMF6A8IcXoK5cFBBq-CY8oBR/view?usp=sharing)
-da Paloma também pode te ajudar nos seus primeiros passos. Repare que, apesar dos nomes diferentes,
-a estrutura é similar ;)
-
-### Recursos e tópicos relacionados
-
-Aqui está um vídeo de Michelle que mostra o algoritmo de Luhn (o vídeo está em
-espanhol, mas pode ser útil) e mais algumas coisas que você deve saber para
-realizar este projeto. Ouça com atenção e siga os conselhos dela! :)
-
-[![dicas de cartão de
-crédito](https://img.youtube.com/vi/f0zL6Ot9y_w/0.jpg)](https://www.youtube.com/watch?v=f0zL6Ot9y_w)
-
-Desenho da experiência do usuário (User Experience Design):
-
-- Ideação
-- Prototipagem
-- Teste e iteração
-
-Desenvolvimento de front-end:
-
-- Valores
-- Tipos
-- Variáveis
-- Controle de fluxo
-- Testes unitários
-- [Aprenda mais sobre
-  `array`](https://lms.laboratoria.la/cohorts/spl-2021-04-bootcamp-js-spl006/topics/javascript-pt/04-arrays/01-arrays)
-- [Aprenda mais sobre
-  `Array.reverse()`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)
-- [Aprenda mais sobre
-  `Array.join()`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
-- [Documentação do NPM](https://docs.npmjs.com/)
-
-Ferramentas:
-
-- [Terminal](https://www.loom.com/share/29a6cf0f3c5245bf995738284b706468)
-- [Git config](https://www.loom.com/share/c7d445872b9f4618a24605fdcb26a48d)
-- GitHub e GitHub Pages.
-
-Organização do trabalho:
-
-- [Agilidade](https://www.youtube.com/watch?v=vozsjbh4noU)
-- [Scrum em menos de 2 minutos](https://www.youtube.com/watch?v=IKZHPjCQ2m8)
-- [Scrum em detalhes](https://www.youtube.com/watch?v=mt2hM4yrPn0). Não
-  esperamos que você faça tudo isso neste projeto. Iremos aprofundando nesses
-  conceitos ao longo do _bootcamp_.
-
-## 9. Checklist
+## 8. Checklist
 
 Essa seção é para te ajudar a ter um controle do que você precisa completar.
 
-### Parte Obrigatória
+### 8.1 Parte Obrigatória
 
 - [ ] `README.md` adicionar informação sobre o processo e decisões do desenho.
 - [ ] `README.md` explicar claramente quem são os usuários e as suas relações
@@ -445,7 +246,20 @@ Essa seção é para te ajudar a ter um controle do que você precisa completar.
 - [ ] Interface que mostre o resultado da validação
 - [ ] Interface que oculte todos os números exceto os 4 últimos.
 
-### Parte Opcional: "Hacker edition"
+### 8.2 Parte Opcional: "Hacker edition"
 
 - [ ] Implementar função que identifique a emissor do cartão
 - [ ] Interface que mostre o resultado do emissor
+
+## 9. Autora
+
+<div>
+   <img alt="Adriana-Watanabe" height="150" src="https://user-images.githubusercontent.com/97361694/150664694-707f976b-f640-47a2-96c7-86b14db235b5.png">
+</div>
+
+### [Adriana Tiemi Watanabe](https://github.com/adrianatwatanabe)
+
+**Projeto do Bootcamp da _[Laboratoria](https://hub.laboratoria.la/br)_**
+
+<a href = "mailto:adriana.t.watanabe@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
+<a href="https://www.linkedin.com/in/adrianatwatanabe" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
