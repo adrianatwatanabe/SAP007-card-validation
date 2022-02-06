@@ -1,76 +1,56 @@
 const validator = {
   isValid(creditCardNumber) {
-    var errors = [];
     if (creditCardNumber.length == 0) {
-      errors.textContent = "Insira o número!";
+      console.log("Insira o número!");
       return false;
     }
     if (creditCardNumber.length <= 8) {
-      errors.textContent = "Quantidade de números insuficiente!";
+      console.log("Quantidade de números insuficiente!");
       return false;
     }
 
-    let cleanNumber = creditCardNumber.replace(/[^0-9]/g, "");
-    let cardNumber = cleanNumber.split("");
+    var cleanNumber = creditCardNumber
+      .replace(/[ ^0-9]/g, "")
+      .replace(/ /g, "");
+    var cardNumber = cleanNumber.split("");
     cardNumber.reverse();
-    let cardNumberLenght = cardNumber.length;
 
-    // DOUBLING THE EVEN NUMBERS
-    var evenArray = [];
-    var oddArray = [];
-    for (let number = 0; number >= cardNumberLenght; number++) {
-      //ERRADO
-      if (cardNumber[number] % 2 == 0) {
-        let evenNumber = cardNumber * 2;
-        if (evenNumber % 9 == 1) {
-          let number1 = parseInt(evenNumber[0]);
-          let number2 = parseInt(evenNumber[2]);
-          let sum = number1 + number2;
-          evenArray.shift(sum);
+    var sumAll = 0;
+    for (let num = 0; num < cardNumber.length; num++) {
+      var arrayNumber = [];
+      if ((num + 1) % 2 == 0) {
+        arrayNumber[num] = cardNumber[num] * 2;
+        if (arrayNumber[num] - 9 >= 1) {
+          let numberArray = evenNumber.split(""); //separou em array
+          var aux = parseInt(numberArray[0]) + parseInt(numberArray[1]);
+          sumAll = sumAll + aux;
         }
-        console.log("par");
       } else {
-        oddArray.shift(sum);
-        console.log("");
+        sumAll = sumAll + arrayNumber[num];
       }
     }
-
-    // ADDING EVERYTHING
-    var sumAll = 0;
-    for (let even = 0; even >= evenArray.length; even++) {
-      sumAll = evenArray[even] + sumAll;
-    }
-    for (let odd = 0; odd >= oddArray.length; odd++) {
-      let convertNumber = parseInt(oddArray[odd]);
-      sumAll = convertNumber + sumAll;
-    }
-
     // VALIDATION
-    if (sumAll % 10 != 0) {
-      console.log("Cartão inválido!");
-      return false;
-    } else {
+    if (sumAll % 10 == 0) {
+      console.log("Cartão de Crédito válido!");
       return true;
+    } else {
+      console.log("Cartão de Crédito inválido!");
+      return false;
     }
   },
 
   maskify(creditCardNumber) {
-    let cleanNumber = creditCardNumber.replace(/[ .-]/g, ""); // ou D
-    let cardNumberReverse = cleanNumber.reverse();
-    var visibleNumber = [];
-    let cardNumberLenght = cardNumberReverse.length;
-    for (let number = 0; cardNumberReverse.length >= 4; number++) {
-      visibleNumber[number] = cardNumberReverse.shift();
+    let cleanNumber = creditCardNumber.replace(/[^0-9]/g, "").replace(/ /g, "");
+    let cardNumber = cleanNumber.split("");
+    for (let num = 0; num < cardNumber.length; num++) {
+      if (num < cardNumber.length - 4) {
+        var cardMaskify = cardMaskify + "#";
+      } else {
+        var cardMaskify = cardMaskify + cardNumber.charAt(i);
+      }
     }
-    for (
-      let number = 5;
-      cardNumberReverse.length >= cardNumberLenght;
-      number++
-    ) {
-      visibleNumber[number].push("*");
-    }
-    var visibleNumberReverse = visibleNumber.reverse();
-    return visibleNumberReverse.toString();
+    cardMaskify.join();
+    return cardMaskify;
   },
 };
 
