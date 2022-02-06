@@ -1,21 +1,21 @@
 import validator from "./validator.js";
 
-const reloadPageLogo = document.getElementById("logo");
-reloadPageLogo.addEventListener("click", function () {
+const pageReload = document.querySelector("#logo");
+pageReload.addEventListener("click", function () {
   location.reload();
 });
-const openModal = openModal.addEventListener("click");
-const closeModal = closeModal.addEventListener("click");
-const containerModal = containerModal.addEventListener("click");
-const button = document.querySelector("#validation");
-button.addEventListener("click", cardValidation(cardNumber));
-const form = document.querySelector("#formValidation");
-const cardNumberValue = form.cardNumber.value;
-const cardNumber = cardNumberValue
-  .replace(/[ ^0-9a-zA-Z]/g, "")
-  .replace(/ /g, "");
+initModal();
+cardValidation();
 
-function cardValidation(cardNumber, event) {
+function cardValidation() {
+  const form = document.querySelector("#formValidation");
+  const cardNumberValue = form.cardNumber.value;
+  const cardNumber = cardNumberValue
+    .replace(/[ ^0-9a-zA-Z]/g, "")
+    .replace(/ /g, "");
+  const button = document.querySelector("#validation");
+  button.addEventListener("click", cardValidation(cardNumber));
+
   event.preventDefault();
   if (cardNumber.length == 0) {
     //console.log("Insira o número!");
@@ -31,42 +31,37 @@ function cardValidation(cardNumber, event) {
   form.reset();
 }
 
-initModalAbout();
-initModalContacts();
-
-function initModalAbout() {
-  let openModal = document.querySelector('[data-modal="openModalAbout"]');
-  let closeModal = document.querySelector('[data-modal="closeModalAbout"]');
-  let containerModal = document.querySelector(
+function initModal() {
+  const openModalA = document.querySelector('[data-modal="openModalAbout"]');
+  const closeModalA = document.querySelector('[data-modal="closeModalAbout"]');
+  const containerModalA = document.querySelector(
     '[data-modal="containerModalAbout"]'
   );
-  analyzeModal(openModal, closeModal, containerModal);
-}
-
-function initModalContacts() {
-  let openModal = document.querySelector('[data-modal="openModalContacts"]');
-  let closeModal = document.querySelector('[data-modal="closeModalContacts"]');
-  let containerModal = document.querySelector(
+  const openModalC = document.querySelector('[data-modal="openModalContacts"]');
+  const closeModalC = document.querySelector(
+    '[data-modal="closeModalContacts"]'
+  );
+  const containerModalC = document.querySelector(
     '[data-modal="containerModalContacts"]'
   );
-  analyzeModal(openModal, closeModal, containerModal);
+  analyzeModal(openModalA, closeModalA, containerModalA);
+  analyzeModal(openModalC, closeModalC, containerModalC);
 }
 
 function analyzeModal(openModal, closeModal, containerModal) {
   if (openModal && closeModal && containerModal) {
-    openModal(toggleModal);
-    closeModal(toggleModal);
-    containerModal(clickOutsideModal);
-  }
-}
-
-function toggleModal(event) {
-  event.preventDefault();
-  containerModal.classList.toggle("ativo");
-}
-
-function clickOutsideModal(event) {
-  if (event.target === this) {
-    toggleModal(event);
+    let toogle = function (event) {
+      event.preventDefault();
+      containerModal.classList.toggle("ativo");
+    };
+    let outside = function (event) {
+      if (event.target === this) {
+        event.preventDefault();
+        containerModal.classList.toggle("ativo");
+      }
+    };
+    openModal.addEventListener("click", toogle);
+    closeModal.addEventListener("click", toogle);
+    containerModal.addEventListener("click", outside);
   }
 }

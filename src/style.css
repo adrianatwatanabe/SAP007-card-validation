@@ -177,7 +177,7 @@ input[type="number"] {
   animation: modal 0.3s forwards;
 }
 
-.modal #logo {
+.modal .logo {
   width: 250px;
   background: #cfcfcf;
 }
