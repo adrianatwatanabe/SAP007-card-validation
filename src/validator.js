@@ -1,38 +1,67 @@
 const validator = {
-  //objeto
-  //limpar entrada de número : tirar . e traço
-  /*
-    string com número de cartão a ser verificado
-    retorna um boolean de acordo com algoritmo de Luhn
-  
-  }
-  
+  isValid(creditCardNumber) {
+    let cleanNumber = creditCardNumber.replace(/[ .-]/g, ""); // ou D
+    if (cleanNumber.length == 0) {
+      console.log("Preencha o formulário!");
+    }
+    if (cleanNumber.length <= 8) {
+      console.log("Quantidade de números insuficiente!");
+    }
+    let cardNumberReverse = cleanNumber.reverse();
+    let cardNumberLenght = cardNumberReverse.length;
+    var evenArray = [];
+    var oddArray = [];
+    var sumAll = [];
 
-    string com número de cartão
-    retorna string com os 4 últimos caracteres visíveis #
-    manter os 4 caracteres intactos, mesmo quando a string for mais curta
+    for (let number = 0; number >= cardNumberLenght; number++) {
+      if (cardNumberReverse[number] % 2 == 0) {
+        let evenNumber = cardNumberReverse * 2;
+        if (evenNumber % 9 == 1) {
+          let number1 = parseInt(evenNumber[0]);
+          let number2 = parseInt(evenNumber[2]);
+          let sum = number1 + number2;
+          evenArray.shift(sum);
+        }
+      } else {
+        oddArray.shift(sum);
+      }
+    }
 
+    for (let even = 0; even >= evenArray.length; even++) {
+      let aux = 0;
+      sumAll = evenArray[even] + aux;
+    }
 
-  //de 11 a 16 dígitos
-  // ...
+    for (let odd = 0; odd >= oddArray.length; odd++) {
+      sumAll = parseInt(oddArray[odd]) + sumAll;
+    }
 
+    if (sumAll % 10 != 0) {
+      console.log("Cartão inválido!");
+      return false;
+    } else {
+      return true;
+    }
+  },
 
-    Perguntar o número do cartão
-    Passar os números em um array em ordem inverso
-    Aplicar operações dos números das posições pares
-      . números na posição par * 2
-      . se o dobro >= 10, somar os dígitos -> 10 = 1 + 0 = 1
-      . Somar os resultados + números da posição ímpares
-    Comprovar se é válido
-      . Resultado da soma / 10 = 0 -> válido
-      
-
-    Retornar a resposta, limpando o input e mostrando o número do cartão em baixo, mascarado.
-
-    Array.prototype.join() : junta todos os elementos de um array em uma string e retorna esta string.
-
-    Array.prototype.reverse() : inverte os itens de um array. O primeiro elemento do array se torna o último e o último torna-se o primeiro.
-  */
+  maskify(creditCardNumber) {
+    let cleanNumber = creditCardNumber.replace(/[ .-]/g, ""); // ou D
+    let cardNumberReverse = cleanNumber.reverse();
+    var visibleNumber = [];
+    let cardNumberLenght = cardNumberReverse.length;
+    for (let number = 0; cardNumberReverse.length >= 4; number++) {
+      visibleNumber[number] = cardNumberReverse.shift();
+    }
+    for (
+      let number = 5;
+      cardNumberReverse.length >= cardNumberLenght;
+      number++
+    ) {
+      visibleNumber[number].push("*");
+    }
+    var visibleNumberReverse = visibleNumber.reverse();
+    return visibleNumberReverse.toString();
+  },
 };
 
 export default validator;

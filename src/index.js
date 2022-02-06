@@ -1,12 +1,41 @@
 import validator from "./validator.js";
 
+// RELOAD PAGE IN LOGO
 document.getElementById("logo").addEventListener("click", function () {
   location.reload();
 });
 
+// INIT MODAL
 initModalAbout();
 initModalContacts();
 
+// VALIDATION
+var addButton = document
+  .querySelector("#validation")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    // GETTING ANSWER
+    let form = document.querySelector("#formValidation");
+    var creditCardNumber = form.cardNumber.value;
+    console.log(typeof creditCardNumber);
+  });
+
+var isValid = validator.isValid(creditCardNumber);
+if (isValid == true) {
+  validator.maskify(cleanNumber);
+} else {
+  //retornar erros!!!
+}
+
+// ADD ANSWER
+/*
+  Adicionar resposta na tag
+  Add class na tag span
+  limpar tag span
+  LIMPAR FORMULÁRIO
+*/
+
+// MODAL
 function initModalAbout() {
   let openModal = document.querySelector('[data-modal="openModalAbout"]');
   let closeModal = document.querySelector('[data-modal="closeModalAbout"]');
@@ -31,6 +60,7 @@ function analyzeModal(openModal, closeModal, containerModal) {
       event.preventDefault();
       containerModal.classList.toggle("ativo");
     }
+
     function clickOutsideModal(event) {
       if (event.target === this) {
         toggleModal(event);

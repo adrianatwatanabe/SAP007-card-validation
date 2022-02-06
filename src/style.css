@@ -41,27 +41,29 @@ form label {
   font-size: 1.2rem;
   line-height: 25px;
   color: #fff;
+  width: 485px;
 }
 
 form input {
   margin-top: 10px;
   height: 38px;
+  width: 485px;
   font-size: 1.2rem;
   border-color: #fff;
   background-color: #1c596f;
-  border-radius: 12px;
+  border-radius: 8px;
   color: #fff;
   text-align: right;
 }
 
-.validation {
+#validation {
   display: block;
-  margin-top: 20px;
-  margin-left: 370px;
+  margin-top: 5px;
+  margin-left: 350px;
   width: 140px;
-  height: 40px;
+  height: 44px;
   background-color: #f0aa13;
-  border-radius: 12px;
+  border-radius: 8px;
   color: #00455e;
   font-weight: 600;
   font-size: 1.2rem;
@@ -70,7 +72,7 @@ form input {
   border: none;
 }
 
-.validation:hover {
+#validation:hover {
   background-color: #ff8c49;
 }
 
@@ -131,7 +133,6 @@ input[type="number"] {
   padding: 30px;
   border: 3px solid #00455e;
   box-shadow: 0 0 0 10px #cfcfcf;
-  border-radius: 5px;
   text-align: center;
   position: relative;
 }
@@ -200,4 +201,44 @@ input[type="number"] {
 
 #modalAbout p {
   text-align: left;
+}
+
+#cardValidation {
+  text-align: right;
+  font-size: 1.6rem;
+  color: #f0aa13;
+  padding-top: 40px;
+  width: 485px;
+}
+
+.cardValidation {
+  display: block;
+  margin-top: 40px;
+  margin-left: 190px;
+  width: 300px;
+  height: 44px;
+  background-color: #ff8c49;
+  border-radius: 8px;
+  color: #00455e;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 25px;
+  text-align: center;
+  border: none;
+}
+
+.cardValidation:hover {
+  background-color: #f0aa13;
+}
+
+#errorMenssage {
+  padding: 0px;
+  padding-top: 5px;
+  color: #ff6666;
+  font-size: 1.2rem;
+  list-style: none;
+}
+
+ul li {
+  padding-top: 10px;
 }
