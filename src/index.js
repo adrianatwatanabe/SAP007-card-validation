@@ -1,34 +1,39 @@
 import validator from "./validator.js";
 
-// RELOAD PAGE IN LOGO
-document.getElementById("logo").addEventListener("click", function () {
+const reloadPageLogo = document.getElementById("logo");
+reloadPageLogo.addEventListener("click", function () {
   location.reload();
 });
+const openModal = openModal.addEventListener("click");
+const closeModal = closeModal.addEventListener("click");
+const containerModal = containerModal.addEventListener("click");
+const button = document.querySelector("#validation");
+button.addEventListener("click", cardValidation(cardNumber));
+const form = document.querySelector("#formValidation");
+const cardNumberValue = form.cardNumber.value;
+const cardNumber = cardNumberValue
+  .replace(/[ ^0-9a-zA-Z]/g, "")
+  .replace(/ /g, "");
 
-// INIT MODAL
+function cardValidation(cardNumber, event) {
+  event.preventDefault();
+  if (cardNumber.length == 0) {
+    //console.log("Insira o número!");
+  }
+  if (cardNumber.length >= 11 && cardNumber.length <= 18) {
+    validator.maskify(cardNumber);
+    //let creditCardNumber = creditCardNumber.replace(/[ ^0-9]/g, "").replace(/ /g, "");
+    validator.isValid(cardNumber);
+    //console.log(mask, valid);
+  } else {
+    //console.log("Um cartão deve ter entre 11 a 18 números!");
+  }
+  form.reset();
+}
+
 initModalAbout();
 initModalContacts();
 
-// VALIDATION
-var addButton = document.querySelector("#validation");
-
-addButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  // GETTING ANSWER
-  let form = document.querySelector("#formValidation");
-  var creditCardNumber = form.cardNumber.value; //String
-  var valid = validator.isValid(creditCardNumber);
-  if (valid != true) {
-    console.log("Cartão inválido!");
-  } else {
-    var maskify = validator.maskify(creditCardNumber);
-    console.log(maskify);
-    console.log(typeof maskify);
-  }
-  form.reset();
-});
-
-// MODAL
 function initModalAbout() {
   let openModal = document.querySelector('[data-modal="openModalAbout"]');
   let closeModal = document.querySelector('[data-modal="closeModalAbout"]');
@@ -49,18 +54,19 @@ function initModalContacts() {
 
 function analyzeModal(openModal, closeModal, containerModal) {
   if (openModal && closeModal && containerModal) {
-    function toggleModal(event) {
-      event.preventDefault();
-      containerModal.classList.toggle("ativo");
-    }
+    openModal(toggleModal);
+    closeModal(toggleModal);
+    containerModal(clickOutsideModal);
+  }
+}
 
-    function clickOutsideModal(event) {
-      if (event.target === this) {
-        toggleModal(event);
-      }
-    }
-    openModal.addEventListener("click", toggleModal);
-    closeModal.addEventListener("click", toggleModal);
-    containerModal.addEventListener("click", clickOutsideModal);
+function toggleModal(event) {
+  event.preventDefault();
+  containerModal.classList.toggle("ativo");
+}
+
+function clickOutsideModal(event) {
+  if (event.target === this) {
+    toggleModal(event);
   }
 }

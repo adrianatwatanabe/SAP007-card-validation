@@ -1,56 +1,40 @@
 const validator = {
-  isValid(creditCardNumber) {
-    if (creditCardNumber.length == 0) {
-      console.log("Insira o número!");
-      return false;
-    }
-    if (creditCardNumber.length <= 8) {
-      console.log("Quantidade de números insuficiente!");
-      return false;
-    }
-
-    var cleanNumber = creditCardNumber
-      .replace(/[ ^0-9]/g, "")
-      .replace(/ /g, "");
-    var cardNumber = cleanNumber.split("");
-    cardNumber.reverse();
-
-    var sumAll = 0;
-    for (let num = 0; num < cardNumber.length; num++) {
-      var arrayNumber = [];
-      if ((num + 1) % 2 == 0) {
-        arrayNumber[num] = cardNumber[num] * 2;
-        if (arrayNumber[num] - 9 >= 1) {
-          let numberArray = evenNumber.split(""); //separou em array
-          var aux = parseInt(numberArray[0]) + parseInt(numberArray[1]);
-          sumAll = sumAll + aux;
+  isValid: function (creditCardNumber) {
+    let cardList = Array.from(creditCardNumber);
+    let cardNumber = cardList.reverse();
+    let cardNumberArray = cardNumber.map(Number);
+    let sumAll = 0;
+    for (let num = 0; num < cardNumberArray.length; num++) {
+      if (num % 2 != 0) {
+        cardNumberArray[num] = cardNumberArray[num] * 2;
+        if (cardNumberArray[num] > 9) {
+          cardNumberArray[num] = cardNumberArray[num] - 9;
+          sumAll = sumAll + cardNumberArray[num];
+        } else {
+          sumAll = sumAll + cardNumberArray[num];
         }
       } else {
-        sumAll = sumAll + arrayNumber[num];
+        sumAll = sumAll + cardNumberArray[num];
       }
-    }
-    // VALIDATION
-    if (sumAll % 10 == 0) {
-      console.log("Cartão de Crédito válido!");
-      return true;
-    } else {
-      console.log("Cartão de Crédito inválido!");
-      return false;
+      if (sumAll % 10 === 0) {
+        return (creditCardNumber = true);
+      } else {
+        return (creditCardNumber = false);
+      }
     }
   },
 
-  maskify(creditCardNumber) {
-    let cleanNumber = creditCardNumber.replace(/[^0-9]/g, "").replace(/ /g, "");
-    let cardNumber = cleanNumber.split("");
+  maskify: function (creditCardNumber) {
+    let mask = "";
+    let cardNumber = Array.from(creditCardNumber);
     for (let num = 0; num < cardNumber.length; num++) {
-      if (num < cardNumber.length - 4) {
-        var cardMaskify = cardMaskify + "#";
+      if (num >= cardNumber.length - 4) {
+        mask = mask + cardNumber.charAt(num);
       } else {
-        var cardMaskify = cardMaskify + cardNumber.charAt(i);
+        mask = mask + "#";
       }
     }
-    cardMaskify.join();
-    return cardMaskify;
+    return mask;
   },
 };
 
