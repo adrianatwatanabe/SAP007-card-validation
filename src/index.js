@@ -10,30 +10,32 @@ initModalAbout();
 initModalContacts();
 
 // VALIDATION
-var addButton = document
-  .querySelector("#validation")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    // GETTING ANSWER
-    let form = document.querySelector("#formValidation");
-    var creditCardNumber = form.cardNumber.value;
-    console.log(typeof creditCardNumber);
-  });
+var addButton = document.querySelector("#validation");
 
-var isValid = validator.isValid(creditCardNumber);
-if (isValid == true) {
-  validator.maskify(cleanNumber);
-} else {
-  //retornar erros!!!
-}
-
-// ADD ANSWER
-/*
-  Adicionar resposta na tag
-  Add class na tag span
-  limpar tag span
-  LIMPAR FORMULÁRIO
-*/
+addButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  // GETTING ANSWER
+  let form = document.querySelector("#formValidation");
+  var creditCardNumber = form.cardNumber.value;
+  //console.log(typeof creditCardNumber);
+  var valid = validator.isValid(creditCardNumber);
+  console.log(typeof valid);
+  if (valid == true) {
+    var maskify = validator.maskify(cleanNumber);
+    // ADD ANSWER
+    let validation = document.querySelector(".cardValidation");
+    validation.textContent = "Cartão de Crédito Válido!";
+    console.log(validation.textContent);
+  } else {
+    if (errors.length > 0) {
+      console.log(errors);
+      var errorMessage = document.querySelector("#mensagem-erro");
+      mensagemErro.textContent = erros;
+      return;
+    }
+  }
+  form.reset();
+});
 
 // MODAL
 function initModalAbout() {

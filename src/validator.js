@@ -1,13 +1,19 @@
 const validator = {
   isValid(creditCardNumber) {
-    let cleanNumber = creditCardNumber.replace(/[ .-]/g, ""); // ou D
-    if (cleanNumber.length == 0) {
-      console.log("Preencha o formulário!");
+    var errors = [];
+    if (creditCardNumber.length == 0) {
+      errors.textContent = "Insira o número!";
+      return false;
     }
-    if (cleanNumber.length <= 8) {
-      console.log("Quantidade de números insuficiente!");
+    if (creditCardNumber.length <= 8) {
+      errors.textContent = "Quantidade de números insuficiente!";
+      return false;
     }
-    let cardNumberReverse = cleanNumber.reverse();
+
+    var cleanNumber = creditCardNumber.replace(/[^0-9]/g, "");
+    //console.log(typeof cleanNumber);
+    //console.log(cleanNumber);
+    console.log(cleanNumber.reverse());
     let cardNumberLenght = cardNumberReverse.length;
 
     // DOUBLING THE EVEN NUMBERS
