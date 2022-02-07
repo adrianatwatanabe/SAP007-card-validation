@@ -5,7 +5,6 @@ const validator = {
     let cardNumber = cardNumberReverse.map(Number);
     let sumAll = 0;
 
-    //317
     for (let num = 0; num < cardNumber.length; num++) {
       if ((num + 1) % 2 !== 0) {
         sumAll = sumAll + cardNumber[num];
@@ -19,14 +18,7 @@ const validator = {
         }
       }
     }
-
-    if (sumAll % 10 === 0) {
-      creditCardNumber = true;
-      return creditCardNumber;
-    } else {
-      creditCardNumber = false;
-      return creditCardNumber;
-    }
+    return sumAll % 10 === 0;
   },
 
   maskify: function (creditCardNumber) {

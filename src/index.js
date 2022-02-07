@@ -6,10 +6,11 @@ pageReload.addEventListener("click", function () {
 });
 initModal();
 
-const form = document.querySelector("#formValidation");
 const inputCardNumber = document.querySelector("#cardNumber");
-const buttonValidation = document.querySelector("#validation");
+const buttonValidation = document.querySelector(".buttonValidation");
 buttonValidation.addEventListener("click", cardValidation);
+const textError = document.querySelector(".errorMessage");
+const textValidation = document.querySelector("#cardText");
 
 function cardValidation(e) {
   e.preventDefault();
@@ -22,20 +23,18 @@ function cardValidation(e) {
   const mask = validator.maskify(creditCardNumber);
 
   if (creditCardNumber.length == 0) {
-    return (document.querySelector(".errorMenssage").innerHTML =
-      "Insira os números!");
-  } else if (creditCardNumber.length <= 7 || creditCardNumber.length >= 18) {
-    return (document.querySelector(".errorMenssage").textContent =
-      "O número do cartão deve ter entre 11 a 16 números!");
+    textError.textContent = "Insira os números!";
+  } else if (creditCardNumber.length <= 8 || creditCardNumber.length >= 16) {
+    textError.textContent = "O número do cartão deve ter entre 8 a 16 números!";
   } else if (valid == false) {
-    return (document.querySelector("#cardValidation").textContent =
-      "Cartão de crédito inválido");
+    textValidation.textContent = "Cartão de crédito inválido!";
   } else if (valid == true) {
-    inputCardNumber.textContent = mask;
-    document.querySelector("#cardValidation").textContent =
-      "Cartão de crédito válido";
+    buttonValidation.classList.replace("buttonValidation", "buttonNew");
+    buttonValidation.textContent = "INSERIR OUTRO NÚMERO";
+    inputCardNumber.value = mask;
+    textValidation.textContent = "Cartão de crédito válido!";
+    cardValidation();
   }
-  form.reset();
 }
 
 function initModal() {
