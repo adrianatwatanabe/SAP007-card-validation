@@ -15,9 +15,8 @@ function cardValidation(e) {
   e.preventDefault();
   let cardNumber = inputCardNumber.value;
   const creditCardNumber = cardNumber
-    .replace(/[^0-9]/g, "")
-    .replace(/ /g, "")
-    .replace(/[^a-zA-Z]/g, "");
+    .replace(/[^0-9a-zA-Z]/g, "")
+    .replace(/ /g, "");
 
   const valid = validator.isValid(creditCardNumber);
   const mask = validator.maskify(creditCardNumber);
@@ -25,13 +24,13 @@ function cardValidation(e) {
   if (creditCardNumber.length == 0) {
     return (document.querySelector(".errorMenssage").innerHTML =
       "Insira os números!");
-  } else if (creditCardNumber.length < 11 || creditCardNumber.length > 16) {
+  } else if (creditCardNumber.length <= 7 || creditCardNumber.length >= 18) {
     return (document.querySelector(".errorMenssage").textContent =
       "O número do cartão deve ter entre 11 a 16 números!");
-  } else if (valid === false) {
+  } else if (valid == false) {
     return (document.querySelector("#cardValidation").textContent =
       "Cartão de crédito inválido");
-  } else if (valid === true) {
+  } else if (valid == true) {
     inputCardNumber.textContent = mask;
     document.querySelector("#cardValidation").textContent =
       "Cartão de crédito válido";
