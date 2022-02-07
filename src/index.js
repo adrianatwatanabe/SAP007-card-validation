@@ -1,40 +1,61 @@
 import validator from "./validator.js";
 
-const pageReload = document.querySelector("#logo");
+var pageReload = document.querySelector("#logo");
 pageReload.addEventListener("click", function () {
   location.reload();
 });
 initModal();
-
-const inputCardNumber = document.querySelector("#cardNumber");
-const buttonValidation = document.querySelector(".buttonValidation");
+var buttonValidation = document.querySelector(".buttonValidation");
 buttonValidation.addEventListener("click", cardValidation);
-const textError = document.querySelector(".errorMessage");
-const textValidation = document.querySelector("#cardText");
 
 function cardValidation(e) {
   e.preventDefault();
+  let inputCardNumber = document.querySelector("#cardNumber");
+  let textError = document.querySelector(".errorMessage");
+  let textValidation = document.querySelector("#cardText");
   let cardNumber = inputCardNumber.value;
-  const creditCardNumber = cardNumber
+  let creditCardNumber = cardNumber
     .replace(/[^0-9a-zA-Z]/g, "")
     .replace(/ /g, "");
 
-  const valid = validator.isValid(creditCardNumber);
-  const mask = validator.maskify(creditCardNumber);
+  let valid = validator.isValid(creditCardNumber);
+  let mask = validator.maskify(creditCardNumber);
 
   if (creditCardNumber.length == 0) {
     textError.textContent = "Insira os números!";
+    newButton();
   } else if (creditCardNumber.length <= 8 || creditCardNumber.length >= 16) {
     textError.textContent = "O número do cartão deve ter entre 8 a 16 números!";
+    newButton();
   } else if (valid == false) {
     textValidation.textContent = "Cartão de crédito inválido!";
+    newButton();
   } else if (valid == true) {
-    buttonValidation.classList.replace("buttonValidation", "buttonNew");
-    buttonValidation.textContent = "INSERIR OUTRO NÚMERO";
     inputCardNumber.value = mask;
     textValidation.textContent = "Cartão de crédito válido!";
-    cardValidation();
+    newButton();
   }
+}
+
+function newButton() {
+  let buttonValidation = document.querySelector(".buttonValidation");
+  buttonValidation.classList.replace("buttonValidation", "buttonNew");
+  buttonValidation.textContent = "INSERIR OUTRO NÚMERO";
+  let buttonNew = document.querySelector(".buttonNew");
+  buttonNew.addEventListener("click", cleanPage);
+}
+
+function cleanPage() {
+  let inputCardNumber = document.querySelector("#cardNumber");
+  let textError = document.querySelector(".errorMessage");
+  let textValidation = document.querySelector("#cardText");
+  let buttonValidation = document.querySelector(".buttonNew");
+  textError.innerHTML = "";
+  textValidation.innerHTML = "";
+  inputCardNumber.value = "";
+  buttonValidation.classList.replace("buttonNew", "buttonValidation");
+  buttonValidation.textContent = "VALIDAR";
+  location.reload();
 }
 
 function initModal() {

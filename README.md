@@ -229,22 +229,22 @@ Essa seção é para te ajudar a ter um controle do que você precisa completar.
 
 ### 8.1 Parte Obrigatória
 
-- [ ] `README.md` adicionar informação sobre o processo e decisões do desenho.
-- [ ] `README.md` explicar claramente quem são os usuários e as suas relações
+- [x] `README.md` adicionar informação sobre o processo e decisões do desenho.
+- [x] `README.md` explicar claramente quem são os usuários e as suas relações
       com o produto.
-- [ ] `README.md` explicar claramente como o produto soluciona os
+- [x] `README.md` explicar claramente como o produto soluciona os
       problemas/necessidades dos usuários.
-- [ ] Usar VanillaJS.
-- [ ] Implementar `validator.isValid`.
-- [ ] Implementar `validator.maskify`.
-- [ ] Passar o linter com a configuração definida.
-- [ ] Passar as provas unitárias.
-- [ ] Testes unitários cobrindo 70% dos _statements_, _functions_ e _lines_, e
+- [x] Usar VanillaJS.
+- [x] Implementar `validator.isValid`.
+- [x] Implementar `validator.maskify`.
+- [x] Passar o linter com a configuração definida.
+- [x] Passar as provas unitárias.
+- [x] Testes unitários cobrindo 70% dos _statements_, _functions_ e _lines_, e
       no mínimo 50% das _branches_.
-- [ ] Interface que permita escrever o número do cartão para ser validado
-- [ ] Interface que não permita campo vazio no número do cartão
-- [ ] Interface que mostre o resultado da validação
-- [ ] Interface que oculte todos os números exceto os 4 últimos.
+- [x] Interface que permita escrever o número do cartão para ser validado
+- [x] Interface que não permita campo vazio no número do cartão
+- [x] Interface que mostre o resultado da validação
+- [x] Interface que oculte todos os números exceto os 4 últimos.
 
 ### 8.2 Parte Opcional: "Hacker edition"
 
