@@ -114,7 +114,7 @@ Essa validação do cartão de crédito é o primeiro passo para aceitar um paga
     - _**Preto, Cinza e Branco:**_ são cores consideradas neutras, podendo ser utilizadas em textos para que haja contraste com o plano de fundo ou ao contrário.
 
       <div>
-        <img alt="logotipo-cardveric" height="100" src="/src/img/to-readme/site-color.png">
+        <img alt="logotipo-cardveric" height="90" src="/src/img/to-readme/site-color.png">
       </div>
 
 - _**Transições e Microinterações**_
