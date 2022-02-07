@@ -231,7 +231,7 @@ input[type="number"] {
   background-color: #f0aa13;
 }
 
-#errorMenssage {
+#error {
   padding: 0px;
   padding-top: 5px;
   color: #ff6666;
@@ -239,6 +239,6 @@ input[type="number"] {
   list-style: none;
 }
 
-ul li {
+ul .errorMessage {
   padding-top: 10px;
 }

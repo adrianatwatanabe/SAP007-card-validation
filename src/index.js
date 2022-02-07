@@ -5,28 +5,36 @@ pageReload.addEventListener("click", function () {
   location.reload();
 });
 initModal();
-cardValidation();
 
-function cardValidation() {
-  const form = document.querySelector("#formValidation");
-  const cardNumberValue = form.cardNumber.value;
-  const cardNumber = cardNumberValue
-    .replace(/[ ^0-9a-zA-Z]/g, "")
-    .replace(/ /g, "");
-  const button = document.querySelector("#validation");
-  button.addEventListener("click", cardValidation(cardNumber));
+const form = document.querySelector("#formValidation");
+const inputCardNumber = document.querySelector("#cardNumber");
+const buttonValidation = document.querySelector("#validation");
+buttonValidation.addEventListener("click", cardValidation);
 
-  event.preventDefault();
-  if (cardNumber.length == 0) {
-    //console.log("Insira o número!");
-  }
-  if (cardNumber.length >= 11 && cardNumber.length <= 18) {
-    validator.maskify(cardNumber);
-    //let creditCardNumber = creditCardNumber.replace(/[ ^0-9]/g, "").replace(/ /g, "");
-    validator.isValid(cardNumber);
-    //console.log(mask, valid);
-  } else {
-    //console.log("Um cartão deve ter entre 11 a 18 números!");
+function cardValidation(e) {
+  e.preventDefault();
+  let cardNumber = inputCardNumber.value;
+  const creditCardNumber = cardNumber
+    .replace(/[^0-9]/g, "")
+    .replace(/ /g, "")
+    .replace(/[^a-zA-Z]/g, "");
+
+  const valid = validator.isValid(creditCardNumber);
+  const mask = validator.maskify(creditCardNumber);
+
+  if (creditCardNumber.length == 0) {
+    return (document.querySelector(".errorMenssage").innerHTML =
+      "Insira os números!");
+  } else if (creditCardNumber.length < 11 || creditCardNumber.length > 16) {
+    return (document.querySelector(".errorMenssage").textContent =
+      "O número do cartão deve ter entre 11 a 16 números!");
+  } else if (valid === false) {
+    return (document.querySelector("#cardValidation").textContent =
+      "Cartão de crédito inválido");
+  } else if (valid === true) {
+    inputCardNumber.textContent = mask;
+    document.querySelector("#cardValidation").textContent =
+      "Cartão de crédito válido";
   }
   form.reset();
 }
