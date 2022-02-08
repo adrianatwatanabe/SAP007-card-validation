@@ -4,6 +4,10 @@
 ## CardVeric verifica se o cartão de crédito e débito são válidos.
 
 **Status do Projeto:** _Concluído_
+  
+**Deploy:** [Site CardVeric](https://adrianatwatanabe.github.io/SAP007-card-validation/)
+  
+---
 
 <div style="display: inline_block">
   <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"> <img alt="HTML" height="35" width="35" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"></a>
