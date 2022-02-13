@@ -20,8 +20,6 @@
 
 ## Índice
 
-- [CardVeric verifica se o cartão de crédito e débito são válidos.](#cardveric-verifica-se-o-cartão-de-crédito-e-débito-são-válidos)
-- [Índice](#índice)
 - [1. Introdução](#1-introdução)
 - [2. Funcionalidades](#2-funcionalidades)
 - [3. Experiência do Usuário (UX)](#3-experiência-do-usuário-ux)
